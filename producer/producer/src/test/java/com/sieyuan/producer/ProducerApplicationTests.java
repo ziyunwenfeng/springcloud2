@@ -11,7 +11,7 @@ public class ProducerApplicationTests {
 
 	@Test
 	public void contextLoads() {
-	    System.out.println("hello");
+	    System.out.println("hello spring cloud");
 	}
 
 }
