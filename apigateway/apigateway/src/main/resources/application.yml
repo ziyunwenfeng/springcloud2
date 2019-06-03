@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      routes:
+      - id: xujin_route
+        uri: http://www.xujin.org:80/
+        predicates:
+        - Path=/xujin
+  main:
+    allow-bean-definition-overriding: true
+server:
+  port: 9005
+eureka:
+  client:
+    serviceUrl:
+      defaultZone : http://localhost:1111/eureka/
+  instance:
+    preferIpAddress : true
+    instance-id : ${spring.cloud.client.ipAddress}:${server.port}
+ribbon:
+  eureka:
+    enabled: true
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          gateway : TRACE
+
+
+management.endpoints.web.exposure.include: '*'

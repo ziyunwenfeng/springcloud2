@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: stream_producer
+  rabbitmq:
+    username: guest
+    password: guest
+    port: 5672
+    host: localhost
+  cloud:
+    stream:
+      bindings:
+        output1 :
+          group : boy
+          content-type : text/plain
+          destination : sieyuan
+          stream_producer:
+            partitionKeyExpression: headers['partitionKey']
+            partitionCount: 2
+        output2:
+          group: girl
+          content-type: application/json
+          destination: sieyuan
+          stream_producer:
+            partitionKeyExpression: headers['partitionKey']
+            partitionCount: 2
+server:
+  port: 9014
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ipaddress}:${server.port}
+ribbon:
+  eureka:
+    enabled: true
+
+logging:
+  config:
+    classpath: logback-spring.xml

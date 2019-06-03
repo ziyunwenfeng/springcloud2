@@ -1,0 +1,12 @@
+2019-05-22 11:04:11.225 [restartedMain] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/consumer/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2019-05-22 11:04:12.051 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-05-22 11:04:13.113 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-05-22 11:04:14.305 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2019-05-22 11:04:14.610 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-05-22 11:04:17.725 [RMI TCP Connection(2)-127.0.0.1] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/consumer/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2019-05-22 17:17:03.168 [restartedMain] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/consumer/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2019-05-22 17:17:04.729 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-05-22 17:17:06.963 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-05-22 17:17:08.943 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2019-05-22 17:17:09.320 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-05-22 17:17:12.830 [RMI TCP Connection(9)-127.0.0.1] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/consumer/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
