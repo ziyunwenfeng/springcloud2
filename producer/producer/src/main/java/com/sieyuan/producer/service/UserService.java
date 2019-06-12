@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 public class UserService {
     @Autowired
     UserMapper mapper ;//"#root.targetClass+#username"
-    @Cacheable(value = "user",key = "#root.targetClass+#username",unless = "#username eq null ")
+    @Cacheable(value = "user",key = "#root.targetClass+#username",unless = "#user eq null ")
     public User getByUsername(String username){
         return mapper.getByUsername(username);
     }
@@ -22,8 +22,8 @@ public class UserService {
         return user;
     }
     @CachePut(value = "user",key = "#root.targetClass+#username",unless = "#username eq null ")
-    public User updateUser(String username){
-        mapper.updateUser(username);
+    public User updateUser(String username,String password){
+        mapper.updateUser(username,password);
         return mapper.getByUsername(username);
     }
     @CacheEvict(value = "user",key ="#root.targetClass+#username",condition = "#result eq true")

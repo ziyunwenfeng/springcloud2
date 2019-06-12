@@ -8,9 +8,9 @@
       insert into user(username) values (#{username,jdbcType=VARCHAR} )
     </insert>
     <update id="updateUser" parameterType="string">
-        update user set username = "hello" where username = #{username,jdbcType=VARCHAR}
+        update user set password = #{param2,jdbcType=VARCHAR}  where username = #{param1,jdbcType=VARCHAR}
     </update>
     <delete id="deleteUser" parameterType="string">
-        delete from user where username = "hi"
+        delete from user where username = #{name,jdbcType=VARCHAR} 
     </delete>
 </mapper>

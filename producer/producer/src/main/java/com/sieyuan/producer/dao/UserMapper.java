@@ -7,6 +7,6 @@ import org.apache.ibatis.annotations.Mapper;
 public interface UserMapper {
     User getByUsername(String username);
     void insertUser(User user);
-    void updateUser(String username);
+    void updateUser(String username,String password);
     void deleteUser(String name);
 }

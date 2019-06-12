@@ -5,7 +5,6 @@ import com.sieyuan.producer.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 
@@ -30,13 +29,13 @@ public class ProducerController {
         logger.info("username: "+user);
         return userService.insertUser(user);
     }
-    @RequestMapping(value="/updateUser",method = RequestMethod.POST)
-    public User updateUser(@RequestParam("username") String username){
+    @RequestMapping(value="/updateUser",method = RequestMethod.PUT)
+    public User updateUser(@RequestParam("username") String username,@RequestParam("password") String password){
         logger.info("username: "+username);
-        return userService.updateUser(username);
+        return userService.updateUser(username,password);
     }
 
-    @RequestMapping(value="/deleteUser",method = RequestMethod.POST)
+    @RequestMapping(value="/deleteUser",method = RequestMethod.DELETE)
     public void deleteUser(@RequestParam("username") String username){
         logger.info("username: "+username);
         userService.deleteUser(username);
