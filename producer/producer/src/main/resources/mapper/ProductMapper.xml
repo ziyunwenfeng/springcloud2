@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.sieyuan.producer.dao.ProductMapper">
-    <select id="getAllProduct" resultType="com.sieyuan.producer.entity.Product">
+    <select id="getAllProduct" resultMap="allProducts">
       select * from t_product
     </select>
     <update id="descProduct">
         update t_product set p_count = p_count-#{param2}   where id = #{param1}
     </update>
+    <resultMap id="allProducts" type="com.sieyuan.producer.entity.Product">
+        <id column="id" jdbcType="INTEGER" property="id"></id>
+        <!--<result property="id" jdbcType="INTEGER" column="id"></result>-->
+        <result property="count" jdbcType="VARCHAR" column="p_count"></result>
+        <result property="name" jdbcType="VARCHAR" column="p_name"></result>
+    </resultMap>
 </mapper>
