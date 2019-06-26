@@ -26,17 +26,21 @@ public class UserService {
     }
     public LoginVO login(String username,String password){
         User user = (User)getByName(username);
-        if(null==user){
-            throw new LoginException("name error!");
-        }
-        if(!PasswordEncoderUtil.matches(password,user.getPassword())){
-            throw new LoginException("password error");
-        }
+//        if(null==user){
+//            throw new LoginException("name error!");
+//        }
+//        if(!PasswordEncoderUtil.matches(password,user.getPassword())){
+//            throw new LoginException("password error");
+//        }
         JWT jwt = client.getToken("Basic dXNlci1zZXJ2aWNlOjEyMzQ1Ng==","password",username,password);
         if(jwt==null){
             throw new LoginException("internal error");
-        }
+        }else
+            System.out.println("not null!!!!!!!!!!!!!!!!");
         LoginVO loginVO = new LoginVO(jwt,user);
+        System.out.println("*********************");
+        System.out.println(loginVO.getUser().getUsername());
+        System.out.println("*********************");
         return loginVO;
     }
     public void register(String username,String password){

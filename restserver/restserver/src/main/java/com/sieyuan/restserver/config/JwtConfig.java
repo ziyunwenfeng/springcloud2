@@ -34,7 +34,7 @@ public class JwtConfig {
         } catch (IOException e) {
             throw new RuntimeException();
         }
-        converter.setVerifierKey(publicKey);
+//        converter.setVerifierKey(publicKey);
         return converter;
     }
 }

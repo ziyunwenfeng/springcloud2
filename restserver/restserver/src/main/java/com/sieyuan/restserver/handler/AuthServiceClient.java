@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(value="security",fallback = AuthServiceHystrix.class)
+@FeignClient(value="auth-service",fallback = AuthServiceHystrix.class)
 public interface AuthServiceClient {
     @PostMapping(value = "/oauth/token")
     public JWT getToken(
