@@ -1,10 +1,11 @@
 package com.example.test.controller;
 
+import com.example.test.entity.User;
+import com.example.test.kafka.KafkaSender;
+import com.example.test.kafka.TopicConst;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @program: test
@@ -16,11 +17,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/kafka")
 public class ProducerController {
     @Autowired
-    private KafkaTemplate<String,String> kafkaTemplate;
+    private KafkaSender<Object> kafkaSender;
 
-    @RequestMapping("/send")
+    @PostMapping("/send")
     public String send(@RequestParam("msg") String msg){
-        kafkaTemplate.send("hellotest",msg);
+        kafkaSender.send(msg,TopicConst.HELLOTEST);
         return "success";
+    }
+    @PostMapping("/send/user")
+    public void sendUser(@RequestBody User user){
+        kafkaSender.send(user, TopicConst.HELLOTEST);
     }
 }

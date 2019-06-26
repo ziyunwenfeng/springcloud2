@@ -3,7 +3,8 @@ spring:
     bootstrap-servers: 106.14.188.199:9092
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: com.example.test.kafka.ObjectEncoder
       retries: 1
       batch-size: 16384
       buffer-memory: 33554432
