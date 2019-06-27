@@ -20,7 +20,8 @@ import org.springframework.util.concurrent.ListenableFutureCallback;
 public class KafkaSender<T> {
 
     @Autowired
-    KafkaTemplate<String,Object> kafkaTemplate;
+//    KafkaTemplate<String,Object> kafkaTemplate;
+    KafkaTemplate kafkaTemplate;
     /*
      * description: send message
      * @param T obj
@@ -29,9 +30,10 @@ public class KafkaSender<T> {
      * @Date: 2019/6/26 16:08
      */
     public void send(T obj,String topic){
-        String message = JSON.toJSONString(obj);
-        log.info("message : "+ message);
-        ListenableFuture<SendResult<String,Object>> future = kafkaTemplate.send(topic,message);
+//        String message = JSON.toJSONString(obj);
+//        log.info("message : "+ message);
+//        ListenableFuture<SendResult<String,Object>> future = kafkaTemplate.send(0,message);
+        ListenableFuture<SendResult<String,Object>> future = kafkaTemplate.send(topic,obj);
         future.addCallback(new ListenableFutureCallback<SendResult<String, Object>>() {
             @Override
             public void onFailure(Throwable throwable) {

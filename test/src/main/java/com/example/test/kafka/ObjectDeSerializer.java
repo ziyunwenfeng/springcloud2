@@ -1,26 +1,25 @@
 package com.example.test.kafka;
 
 import com.example.test.utils.BeanUtils;
-import org.apache.kafka.common.serialization.Serializer;
+import org.apache.kafka.common.serialization.Deserializer;
 
 import java.util.Map;
 
 /**
  * @program: test
- * @description: object serializer
+ * @description: byte to object
  * @author: wenfeng
- * @create: 2019-06-26 17:47
+ * @create: 2019-06-26 19:28
  **/
-public class ObjectEncoder implements Serializer {
-
+public class ObjectDeSerializer implements Deserializer {
     @Override
     public void configure(Map map, boolean b) {
 
     }
 
     @Override
-    public byte[] serialize(String s, Object o) {
-        return BeanUtils.ObjectToByte(o);
+    public Object deserialize(String s, byte[] bytes) {
+        return BeanUtils.BytesToObject(bytes);
     }
 
     @Override

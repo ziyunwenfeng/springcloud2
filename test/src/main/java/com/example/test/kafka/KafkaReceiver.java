@@ -1,6 +1,7 @@
 package com.example.test.kafka;
 
 import com.alibaba.fastjson.JSON;
+import com.example.test.entity.User;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.kafka.annotation.KafkaListener;
@@ -22,6 +23,8 @@ public class KafkaReceiver {
         System.out.println(record.topic());
         System.out.println(record.offset());
         System.out.println(record.value());
+        User u = (User)record.value();
+        System.out.println(u.getUsername());
     }
 
 }

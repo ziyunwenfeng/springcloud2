@@ -4,7 +4,6 @@ import com.example.test.entity.User;
 import com.example.test.kafka.KafkaSender;
 import com.example.test.kafka.TopicConst;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -26,6 +25,6 @@ public class ProducerController {
     }
     @PostMapping("/send/user")
     public void sendUser(@RequestBody User user){
-        kafkaSender.send(user, TopicConst.HELLOTEST);
+        kafkaSender.send(user,TopicConst.HELLOTEST);
     }
 }

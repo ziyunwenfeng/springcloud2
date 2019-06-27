@@ -3,8 +3,10 @@ spring:
     bootstrap-servers: 106.14.188.199:9092
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      #发送字符串时候使用改序列化和反序列化
 #      value-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: com.example.test.kafka.ObjectEncoder
+      #发送对象时候使用该序列化和反序列化
+      value-serializer: com.example.test.kafka.ObjectSerializer
       retries: 1
       batch-size: 16384
       buffer-memory: 33554432
@@ -16,12 +18,15 @@ spring:
     consumer:
       group-id: test
       enable-auto-commit: true
+      #发送字符串时候使用改序列化和反序列化
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      #发送对象时候使用该序列化和反序列化
+#      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: com.example.test.kafka.ObjectDeSerializer
       auto-offset-reset: earliest
       auto-commit-interval: 100
       properties:
         max:
           partition:
             fetch:
-              bytes:2097152
+              bytes: 2097152
