@@ -1,39 +1,4 @@
-2019-06-16 16:14:03.138 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2019-06-16 16:14:05.724 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-06-16 16:14:07.496 [main] WARN  o.s.c.netflix.archaius.ArchaiusAutoConfiguration - No spring.application.name found, defaulting to 'application'
-2019-06-16 16:14:07.496 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-06-16 16:24:15.124 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2019-06-16 16:24:16.587 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-06-16 16:24:18.515 [main] WARN  o.s.c.netflix.archaius.ArchaiusAutoConfiguration - No spring.application.name found, defaulting to 'application'
-2019-06-16 16:24:18.515 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-06-16 17:34:56.685 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2019-06-16 17:34:58.430 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-06-16 17:35:00.881 [main] WARN  o.s.c.netflix.archaius.ArchaiusAutoConfiguration - No spring.application.name found, defaulting to 'application'
-2019-06-16 17:35:00.882 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-06-16 18:45:03.883 [Eureka-EvictionTimer] WARN  c.netflix.eureka.registry.AbstractInstanceRegistry - DS: Registry: expired lease for PRODUCER/172.16.8.78:9005
-2019-06-16 20:41:17.723 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2019-06-16 20:41:19.442 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-06-16 20:41:22.489 [main] WARN  o.s.c.netflix.archaius.ArchaiusAutoConfiguration - No spring.application.name found, defaulting to 'application'
-2019-06-16 20:41:22.489 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-06-16 20:41:24.380 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- sun.misc.Unsafe.park(Native Method)
- java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
- java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
- java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
- java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
- java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
- java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
- java.lang.Thread.run(Thread.java:748)
-2019-06-16 20:55:21.153 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2019-06-16 20:55:23.560 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-06-16 20:55:25.017 [main] WARN  o.s.c.netflix.archaius.ArchaiusAutoConfiguration - No spring.application.name found, defaulting to 'application'
-2019-06-16 20:55:25.017 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-06-16 23:29:35.153 [Eureka-EvictionTimer] WARN  c.netflix.eureka.registry.AbstractInstanceRegistry - DS: Registry: expired lease for RESTSERVER/172.16.8.78:9010
-2019-06-16 23:29:38.292 [http-nio-1111-exec-3] WARN  c.netflix.eureka.registry.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: RESTSERVER - 172.16.8.78:9010
-2019-06-16 23:29:38.292 [http-nio-1111-exec-3] WARN  com.netflix.eureka.resources.InstanceResource - Not Found (Renew): RESTSERVER - 172.16.8.78:9010
-2019-06-16 23:38:43.189 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2019-06-16 23:38:44.911 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-06-16 23:38:47.877 [main] WARN  o.s.c.netflix.archaius.ArchaiusAutoConfiguration - No spring.application.name found, defaulting to 'application'
-2019-06-16 23:38:47.878 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-06-16 23:39:17.421 [http-nio-1111-exec-2] WARN  c.netflix.eureka.registry.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: AUTH-SERVICE - 172.16.8.78:9025
-2019-06-16 23:39:17.421 [http-nio-1111-exec-2] WARN  com.netflix.eureka.resources.InstanceResource - Not Found (Renew): AUTH-SERVICE - 172.16.8.78:9025
+2019-06-28 18:26:54.036 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-06-28 18:26:55.176 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-06-28 18:26:56.597 [main] WARN  o.s.c.netflix.archaius.ArchaiusAutoConfiguration - No spring.application.name found, defaulting to 'application'
+2019-06-28 18:26:56.597 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.

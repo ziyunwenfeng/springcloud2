@@ -19,10 +19,9 @@ import java.util.List;
  **/
 @Configuration
 @Slf4j
-public class TestComsumer extends Consumer implements ApplicationListener {
+public class TestConsumer extends Consumer implements ApplicationListener {
     @Override
     public ConsumeConcurrentlyStatus dealBody(List<MessageExt> msgs) {
-        int num = 1;
         for(MessageExt msg : msgs){
             try {
                 String str = new String(msg.getBody(),"utf-8");

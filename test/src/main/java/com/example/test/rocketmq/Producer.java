@@ -19,7 +19,6 @@ import org.springframework.context.annotation.Configuration;
 public class Producer {
     @Autowired
     private ProducerConfig producerConfig;
-
     @Bean
     @ConditionalOnProperty(prefix = "rocketmq.producer",value = "default",havingValue = "false")
     public DefaultMQProducer defaultMQProducer() throws MQClientException{

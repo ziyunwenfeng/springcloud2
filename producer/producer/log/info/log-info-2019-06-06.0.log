@@ -1,6 +1,0 @@
-2019-06-06 09:27:51.186 [DiscoveryClient-HeartbeatExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/192.168.40.76:9005 - Re-registering apps/PRODUCER
-2019-06-06 09:27:51.190 [DiscoveryClient-HeartbeatExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/192.168.40.76:9005: registering service...
-2019-06-06 09:27:51.208 [DiscoveryClient-HeartbeatExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/192.168.40.76:9005 - registration status: 204
-2019-06-06 09:28:50.563 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2019-06-06 09:33:50.565 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
-2019-06-06 09:38:50.594 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

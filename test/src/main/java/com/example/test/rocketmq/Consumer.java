@@ -43,7 +43,7 @@ public abstract class Consumer {
         consumer.registerMessageListener(new MessageListenerConcurrently() {
             @Override
             public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> msgs, ConsumeConcurrentlyContext consumeConcurrentlyContext) {
-                return Consumer.this.dealBody(msgs);
+                return dealBody(msgs);
             }
         });
         consumer.start();

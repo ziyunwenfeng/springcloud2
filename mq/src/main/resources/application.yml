@@ -1,0 +1,42 @@
+#spring:
+#  kafka:
+#    bootstrap-servers: 106.14.188.199:9092
+#    producer:
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      #发送字符串时候使用改序列化和反序列化
+##      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      #发送对象时候使用该序列化和反序列化
+#      value-serializer: com.example.mq.kafka.ObjectSerializer
+#      retries: 1
+#      batch-size: 16384
+#      buffer-memory: 33554432
+#      properties:
+#        max:
+#          request:
+#            size:
+#              2097152
+#    consumer:
+#      group-id: mq
+#      enable-auto-commit: true
+#      #发送字符串时候使用改序列化和反序列化
+#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      #发送对象时候使用该序列化和反序列化
+##      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: com.example.mq.kafka.ObjectDeSerializer
+#      auto-offset-reset: earliest
+#      auto-commit-interval: 100
+#      properties:
+#        max:
+#          partition:
+#            fetch:
+#              bytes: 2097152
+rocketmq:
+  producer:
+    groupName: testmq12
+    namesrvAddr: 106.14.188.199:9876
+  consumer:
+    groupName: testmq12
+    namesrvAddr: 106.14.188.199:9876
+#    topic: TopicTest
+#    tag : Tag1
+

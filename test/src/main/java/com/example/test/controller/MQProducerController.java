@@ -28,8 +28,7 @@ public class MQProducerController {
     private DefaultMQProducer defaultMQProducer;
     @PostMapping("/test")
     public void test() throws Exception{
-        Message message = new Message("TopicTest", "Tag1", "12345", "rocketmq测试成功".getBytes());
-
+        Message message = new Message("TopicTest", "Tag1", "12345", "rocketmq测试".getBytes());
         defaultMQProducer.send(message, new SendCallback() {
             @Override
             public void onSuccess(SendResult sendResult) {
