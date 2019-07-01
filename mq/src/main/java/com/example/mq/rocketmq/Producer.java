@@ -24,14 +24,11 @@ public class Producer {
     private ProducerConfig producerConfig;
     @Bean
     public DefaultMQProducer getDefaultMQProducer(){
-        log.info(producerConfig.toString());
-        log.info("rocketmq producer server starting-----------");
         DefaultMQProducer producer = new DefaultMQProducer(producerConfig.getGroupName());
         producer.setNamesrvAddr(producerConfig.getNamesrvAddr());
         producer.setVipChannelEnabled(false);
         try {
             producer.start();
-            log.info("rocketmq producer server stared-----------");
             return producer;
         } catch (MQClientException e) {
             e.printStackTrace();

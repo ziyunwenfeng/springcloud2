@@ -1,6 +1,8 @@
 package com.example.mq.controller;
 
 import com.alibaba.fastjson.JSON;
+import com.example.mq.entity.User;
+import com.example.mq.rocketmq.SendMessage;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
 import org.apache.rocketmq.client.producer.SendCallback;
@@ -22,22 +24,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/mq")
 public class MQProducerController {
     @Autowired
+    SendMessage sendMessage;
     private DefaultMQProducer defaultMQProducer;
     @PostMapping("/test")
     public void test() throws Exception{
-        Message message = new Message("TopicTest", "Tag1", "rocketmq测试".getBytes());
-        defaultMQProducer.send(message, new SendCallback() {
-            @Override
-            public void onSuccess(SendResult sendResult) {
-                log.info("success");
-                log.info(JSON.toJSONString(sendResult));
-            }
-
-            @Override
-            public void onException(Throwable throwable) {
-                log.info("fail");
-            }
-        });
+        User user = new User("yy");
+        sendMessage.send("TopicTest", "Tag1",user);
     }
 
 }

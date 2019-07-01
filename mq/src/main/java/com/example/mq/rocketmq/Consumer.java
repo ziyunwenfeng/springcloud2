@@ -38,7 +38,6 @@ public class Consumer {
      */
     @Bean
     public DefaultMQPushConsumer getConsumer(){
-        log.info("consumer-----------------");
         DefaultMQPushConsumer consumer = new DefaultMQPushConsumer(consumerConfig.getGroupName());
         consumer.setNamesrvAddr(consumer.getNamesrvAddr());
         MessageListener listener = new MessageListener();
