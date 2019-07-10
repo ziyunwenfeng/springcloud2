@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sieyuan.producer.dao.CouDao">
+
+    <resultMap id="couResultMap" type="com.sieyuan.producer.entity.Cou">
+        <id column="id" property="id"/> 
+        <result column="test" property="test"/> 
+
+        
+        <collection property="orgs" ofType="com.sieyuan.producer.entity.Org">
+            <id column="orgs.id" property="id"/> 
+            <result column="orgs.test" property="test"/> 
+        </collection>
+    </resultMap>
+
+    <sql id="couColumns">
+        cou.id AS "id",
+        cou.test AS "test",
+        org.id AS "orgs.id",
+        org.test AS "orgs.test"
+    </sql>
+
+    <sql id="couJoins">
+        LEFT JOIN cou_org on cou_org.couId = cou.id 
+        LEFT JOIN org on org.id = cou_org.orgId
+    </sql>
+
+    <select id="get" resultMap="couResultMap">
+        SELECT
+        <include refid="couColumns" />
+        FROM cou <include refid="couJoins" />
+        <where>
+        cou.id = #{id}
+        </where>
+    </select>
+
+    <select id="findList" resultMap="couResultMap">
+        SELECT
+        <include refid="couColumns" />
+        FROM cou <include refid="couJoins" />
+        <where>
+        </where>
+    </select>
+
+    <select id="findAllList" resultMap="couResultMap">
+        SELECT
+        <include refid="couColumns" />
+        FROM cou <include refid="couJoins" />
+        <where>
+        </where>
+    </select>
+
+    <insert id="insert">
+        INSERT INTO cou(
+            id,
+            test
+        )
+        VALUES (
+            #{id},
+            #{test}
+        )
+    </insert>
+
+    <insert id="insertBatch">
+        INSERT INTO cou(
+            id,
+            test
+        )
+        VALUES
+        <foreach collection ="list" item="cou" separator =",">
+        (
+            #{cou.id},
+            #{cou.test}
+        )
+        </foreach>
+    </insert>
+
+    <update id="update">
+        UPDATE cou SET
+        id = #{id},
+        test = #{test}
+        WHERE id = #{id}
+    </update>
+
+    <update id="delete">
+        DELETE FROM cou
+        WHERE id = #{id}
+    </update>
+
+    <update id="deleteById">
+        DELETE FROM cou
+        WHERE id = #{id}
+    </update>
+
+</mapper>

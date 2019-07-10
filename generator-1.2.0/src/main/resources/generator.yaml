@@ -1,0 +1,12 @@
+db:
+  url: jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&zeroDateTimeBehavior=CONVERT_TO_NULL&allowPublicKeyRetrieval=true
+  username: root
+  password: 123456
+author: wenfeng
+packageName:
+path:
+  controller: controller
+  service: service
+  dao: dao
+  entity: entity
+  mapper: mappers

@@ -38,3 +38,16 @@ rocketmq:
   consumer:
     groupName: test
     namesrvAddr: 106.14.188.199:9876
+
+pagehelper :
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params:
+    count: countSql
+#代码生成器配置
+#生成代码的项目根路径
+auto-code:
+  parentPath: D:\\resource\\workspaceJDB\\auto-code-springboot-demo
+  #生成代码的父包 如父包是com.zengtengpeng.test  controller将在com.zengtengpeng.test.controller下 bean 将在com.zengtengpeng.test.bean下 ,service,dao同理
+  parentPack : com.zengtengpeng.simple
