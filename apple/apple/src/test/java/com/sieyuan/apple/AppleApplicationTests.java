@@ -1,8 +1,6 @@
-package com.sieyuan.producer;
+package com.sieyuan.apple;
 
-import com.sieyuan.producer.entity.User;
-import com.sieyuan.producer.service.ProductService;
-import com.sieyuan.producer.utils.RedisUtil;
+import com.sieyuan.apple.utils.RedisUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,14 +8,9 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import javax.ws.rs.HEAD;
-import java.util.*;
-
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ProducerApplicationTests {
-    @Autowired
-    ProductService productService;
+public class AppleApplicationTests {
     @Autowired
     @Qualifier(value = "redisUtil")
     RedisUtil redisUtil ;
@@ -48,13 +41,6 @@ public class ProducerApplicationTests {
 //        System.out.println(redisUtil.sget("c"));
 //        System.out.println(redisUtil.lGet("a",0,1));
 //        System.out.println(redisUtil.hmget("b"));
-
-        User u = new User("n");
-        redisUtil.set("u",u);
-        User user = (User)redisUtil.get("u");
-        System.out.println(user.getUsername());
-
-
     }
 
 }

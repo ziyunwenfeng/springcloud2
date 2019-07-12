@@ -4,7 +4,7 @@
 2019-07-09 09:36:05.377 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1a38f8e2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2019-07-09 09:36:05.704 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
 2019-07-09 09:36:06.817 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2019-07-09 09:36:06.848 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - No active profile set, falling back to default profiles: default
+2019-07-09 09:36:06.848 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - No active profile set, falling back to default profiles: default
 2019-07-09 09:36:07.748 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2019-07-09 09:36:07.748 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2019-07-09 09:36:07.763 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 0ms. Found 0 repository interfaces.
@@ -52,7 +52,7 @@
 2019-07-09 09:36:13.885 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9005"]
 2019-07-09 09:36:13.902 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9005 (http) with context path ''
 2019-07-09 09:36:13.902 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9005
-2019-07-09 09:36:13.902 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - Started ProducerApplication in 9.58 seconds (JVM running for 10.685)
+2019-07-09 09:36:13.902 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - Started ProducerApplication in 9.58 seconds (JVM running for 10.685)
 2019-07-09 09:36:14.015 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/192.168.110.31:9005 - registration status: 204
 2019-07-09 09:36:14.200 [RMI TCP Connection(6)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2019-07-09 09:36:14.200 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
@@ -75,7 +75,7 @@
 2019-07-09 09:40:27.552 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c2464766] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2019-07-09 09:40:27.851 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
 2019-07-09 09:40:28.946 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2019-07-09 09:40:28.950 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - No active profile set, falling back to default profiles: default
+2019-07-09 09:40:28.950 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - No active profile set, falling back to default profiles: default
 2019-07-09 09:40:29.778 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2019-07-09 09:40:29.778 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2019-07-09 09:40:29.795 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 repository interfaces.
@@ -123,7 +123,7 @@
 2019-07-09 09:40:35.871 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9005"]
 2019-07-09 09:40:35.896 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9005 (http) with context path ''
 2019-07-09 09:40:35.898 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9005
-2019-07-09 09:40:35.901 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - Started ProducerApplication in 9.516 seconds (JVM running for 10.454)
+2019-07-09 09:40:35.901 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - Started ProducerApplication in 9.516 seconds (JVM running for 10.454)
 2019-07-09 09:40:35.916 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/192.168.110.31:9005 - registration status: 204
 2019-07-09 09:40:36.468 [RMI TCP Connection(10)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2019-07-09 09:40:36.470 [RMI TCP Connection(12)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
@@ -138,7 +138,7 @@
 2019-07-09 09:41:23.709 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$87b9361f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2019-07-09 09:41:23.987 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
 2019-07-09 09:41:25.087 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2019-07-09 09:41:25.087 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - No active profile set, falling back to default profiles: default
+2019-07-09 09:41:25.087 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - No active profile set, falling back to default profiles: default
 2019-07-09 09:41:25.920 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2019-07-09 09:41:25.921 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2019-07-09 09:41:25.939 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
@@ -186,7 +186,7 @@
 2019-07-09 09:41:31.859 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9005"]
 2019-07-09 09:41:31.893 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9005 (http) with context path ''
 2019-07-09 09:41:31.894 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9005
-2019-07-09 09:41:31.895 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - Started ProducerApplication in 9.159 seconds (JVM running for 10.094)
+2019-07-09 09:41:31.895 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - Started ProducerApplication in 9.159 seconds (JVM running for 10.094)
 2019-07-09 09:41:31.899 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/192.168.110.31:9005 - registration status: 204
 2019-07-09 09:41:32.227 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2019-07-09 09:41:32.227 [RMI TCP Connection(5)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
@@ -201,7 +201,7 @@
 2019-07-09 09:43:37.384 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e8408ad9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2019-07-09 09:43:37.679 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
 2019-07-09 09:43:38.777 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2019-07-09 09:43:38.777 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - No active profile set, falling back to default profiles: default
+2019-07-09 09:43:38.777 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - No active profile set, falling back to default profiles: default
 2019-07-09 09:43:39.599 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2019-07-09 09:43:39.599 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2019-07-09 09:43:39.617 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 0ms. Found 0 repository interfaces.
@@ -250,7 +250,7 @@
 2019-07-09 09:43:45.519 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/192.168.110.31:9005 - registration status: 204
 2019-07-09 09:43:45.519 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9005 (http) with context path ''
 2019-07-09 09:43:45.519 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9005
-2019-07-09 09:43:45.519 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - Started ProducerApplication in 9.142 seconds (JVM running for 10.077)
+2019-07-09 09:43:45.519 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - Started ProducerApplication in 9.142 seconds (JVM running for 10.077)
 2019-07-09 09:43:45.743 [RMI TCP Connection(6)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2019-07-09 09:43:45.743 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-09 09:43:45.743 [RMI TCP Connection(4)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
@@ -264,7 +264,7 @@
 2019-07-09 10:05:25.826 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d86c961c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2019-07-09 10:05:26.148 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
 2019-07-09 10:05:27.246 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2019-07-09 10:05:27.246 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - No active profile set, falling back to default profiles: default
+2019-07-09 10:05:27.246 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - No active profile set, falling back to default profiles: default
 2019-07-09 10:05:28.094 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2019-07-09 10:05:28.094 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2019-07-09 10:05:28.118 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
@@ -312,7 +312,7 @@
 2019-07-09 10:05:35.087 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9005"]
 2019-07-09 10:05:35.113 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9005 (http) with context path ''
 2019-07-09 10:05:35.113 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9005
-2019-07-09 10:05:35.113 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - Started ProducerApplication in 10.383 seconds (JVM running for 11.333)
+2019-07-09 10:05:35.113 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - Started ProducerApplication in 10.383 seconds (JVM running for 11.333)
 2019-07-09 10:05:35.113 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/192.168.110.31:9005 - registration status: 204
 2019-07-09 10:05:35.200 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2019-07-09 10:05:35.201 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
@@ -363,7 +363,7 @@
 2019-07-09 16:20:39.959 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$3d4297ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2019-07-09 16:20:40.310 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
 2019-07-09 16:20:41.399 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2019-07-09 16:20:41.399 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - No active profile set, falling back to default profiles: default
+2019-07-09 16:20:41.399 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - No active profile set, falling back to default profiles: default
 2019-07-09 16:20:42.321 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2019-07-09 16:20:42.321 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2019-07-09 16:20:42.336 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
@@ -411,7 +411,7 @@
 2019-07-09 16:20:49.135 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9005"]
 2019-07-09 16:20:49.166 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9005 (http) with context path ''
 2019-07-09 16:20:49.166 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9005
-2019-07-09 16:20:49.166 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - Started ProducerApplication in 10.286 seconds (JVM running for 11.45)
+2019-07-09 16:20:49.166 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - Started ProducerApplication in 10.286 seconds (JVM running for 11.45)
 2019-07-09 16:20:49.166 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/192.168.40.76:9005 - registration status: 204
 2019-07-09 16:20:49.508 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2019-07-09 16:20:49.509 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
@@ -432,7 +432,7 @@
 2019-07-09 16:51:01.585 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2a443e55] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2019-07-09 16:51:01.870 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
 2019-07-09 16:51:02.948 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2019-07-09 16:51:02.950 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - No active profile set, falling back to default profiles: default
+2019-07-09 16:51:02.950 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - No active profile set, falling back to default profiles: default
 2019-07-09 16:51:03.791 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2019-07-09 16:51:03.793 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2019-07-09 16:51:03.811 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
@@ -481,7 +481,7 @@
 2019-07-09 16:51:09.915 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/192.168.40.76:9005 - registration status: 204
 2019-07-09 16:51:09.919 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9005 (http) with context path ''
 2019-07-09 16:51:09.920 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9005
-2019-07-09 16:51:09.922 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - Started ProducerApplication in 9.376 seconds (JVM running for 10.326)
+2019-07-09 16:51:09.922 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - Started ProducerApplication in 9.376 seconds (JVM running for 10.326)
 2019-07-09 16:51:10.499 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2019-07-09 16:51:10.500 [RMI TCP Connection(6)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-09 16:51:10.500 [RMI TCP Connection(6)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
@@ -497,7 +497,7 @@
 2019-07-09 17:01:40.314 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$72514de6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2019-07-09 17:01:40.612 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
 2019-07-09 17:01:41.687 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2019-07-09 17:01:41.689 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - No active profile set, falling back to default profiles: default
+2019-07-09 17:01:41.689 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - No active profile set, falling back to default profiles: default
 2019-07-09 17:01:42.536 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2019-07-09 17:01:42.538 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2019-07-09 17:01:42.555 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
@@ -546,7 +546,7 @@
 2019-07-09 17:01:48.452 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/192.168.40.76:9005 - registration status: 204
 2019-07-09 17:01:48.453 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9005 (http) with context path ''
 2019-07-09 17:01:48.454 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9005
-2019-07-09 17:01:48.456 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - Started ProducerApplication in 9.144 seconds (JVM running for 10.095)
+2019-07-09 17:01:48.456 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - Started ProducerApplication in 9.144 seconds (JVM running for 10.095)
 2019-07-09 17:01:48.649 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2019-07-09 17:01:48.649 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-09 17:01:48.649 [RMI TCP Connection(4)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
@@ -561,7 +561,7 @@
 2019-07-09 17:10:47.715 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f222d1c8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2019-07-09 17:10:48.002 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
 2019-07-09 17:10:49.097 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2019-07-09 17:10:49.100 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - No active profile set, falling back to default profiles: default
+2019-07-09 17:10:49.100 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - No active profile set, falling back to default profiles: default
 2019-07-09 17:10:50.210 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2019-07-09 17:10:50.212 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2019-07-09 17:10:50.231 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
@@ -610,7 +610,7 @@
 2019-07-09 17:10:57.530 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/192.168.40.76:9005 - registration status: 204
 2019-07-09 17:10:57.535 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9005 (http) with context path ''
 2019-07-09 17:10:57.536 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9005
-2019-07-09 17:10:57.538 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - Started ProducerApplication in 10.799 seconds (JVM running for 12.094)
+2019-07-09 17:10:57.538 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - Started ProducerApplication in 10.799 seconds (JVM running for 12.094)
 2019-07-09 17:10:57.775 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2019-07-09 17:10:57.776 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-09 17:10:57.776 [RMI TCP Connection(4)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
@@ -624,7 +624,7 @@
 2019-07-09 17:11:48.209 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a18f1df2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2019-07-09 17:11:48.511 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
 2019-07-09 17:11:49.604 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2019-07-09 17:11:49.607 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - No active profile set, falling back to default profiles: default
+2019-07-09 17:11:49.607 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - No active profile set, falling back to default profiles: default
 2019-07-09 17:11:50.746 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2019-07-09 17:11:50.749 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2019-07-09 17:11:50.768 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
@@ -673,7 +673,7 @@
 2019-07-09 17:11:58.081 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/192.168.40.76:9005 - registration status: 204
 2019-07-09 17:11:58.086 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9005 (http) with context path ''
 2019-07-09 17:11:58.086 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9005
-2019-07-09 17:11:58.089 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - Started ProducerApplication in 10.87 seconds (JVM running for 12.109)
+2019-07-09 17:11:58.089 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - Started ProducerApplication in 10.87 seconds (JVM running for 12.109)
 2019-07-09 17:11:58.326 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2019-07-09 17:11:58.327 [RMI TCP Connection(6)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-09 17:11:58.327 [RMI TCP Connection(6)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
@@ -688,7 +688,7 @@
 2019-07-09 17:45:57.654 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$99c06864] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2019-07-09 17:45:57.941 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
 2019-07-09 17:45:59.017 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2019-07-09 17:45:59.018 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - No active profile set, falling back to default profiles: default
+2019-07-09 17:45:59.018 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - No active profile set, falling back to default profiles: default
 2019-07-09 17:45:59.856 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2019-07-09 17:45:59.857 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2019-07-09 17:45:59.875 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
@@ -737,7 +737,7 @@
 2019-07-09 17:46:06.003 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/192.168.40.76:9005 - registration status: 204
 2019-07-09 17:46:06.007 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9005 (http) with context path ''
 2019-07-09 17:46:06.008 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9005
-2019-07-09 17:46:06.010 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - Started ProducerApplication in 9.326 seconds (JVM running for 10.327)
+2019-07-09 17:46:06.010 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - Started ProducerApplication in 9.326 seconds (JVM running for 10.327)
 2019-07-09 17:46:06.077 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2019-07-09 17:46:06.077 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-09 17:46:06.077 [RMI TCP Connection(2)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
@@ -779,7 +779,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 18:56:51.683 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$3aebeab8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2019-07-09 18:56:51.980 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
 2019-07-09 18:56:53.060 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2019-07-09 18:56:53.062 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - No active profile set, falling back to default profiles: default
+2019-07-09 18:56:53.062 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - No active profile set, falling back to default profiles: default
 2019-07-09 18:56:53.898 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2019-07-09 18:56:53.901 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2019-07-09 18:56:53.918 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.
@@ -828,7 +828,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 18:56:59.824 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/192.168.40.76:9005 - registration status: 204
 2019-07-09 18:56:59.827 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9005 (http) with context path ''
 2019-07-09 18:56:59.827 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9005
-2019-07-09 18:56:59.829 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - Started ProducerApplication in 9.099 seconds (JVM running for 10.033)
+2019-07-09 18:56:59.829 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - Started ProducerApplication in 9.099 seconds (JVM running for 10.033)
 2019-07-09 18:57:00.133 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2019-07-09 18:57:00.135 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-09 18:57:00.135 [RMI TCP Connection(2)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
@@ -842,7 +842,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 18:59:16.458 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$32158f19] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2019-07-09 18:59:16.756 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
 2019-07-09 18:59:17.847 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2019-07-09 18:59:17.852 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - No active profile set, falling back to default profiles: default
+2019-07-09 18:59:17.852 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - No active profile set, falling back to default profiles: default
 2019-07-09 18:59:18.974 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2019-07-09 18:59:18.976 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2019-07-09 18:59:18.997 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
@@ -891,7 +891,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 18:59:26.543 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/192.168.40.76:9005 - registration status: 204
 2019-07-09 18:59:26.548 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9005 (http) with context path ''
 2019-07-09 18:59:26.549 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9005
-2019-07-09 18:59:26.551 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - Started ProducerApplication in 10.992 seconds (JVM running for 12.164)
+2019-07-09 18:59:26.551 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - Started ProducerApplication in 10.992 seconds (JVM running for 12.164)
 2019-07-09 18:59:26.808 [RMI TCP Connection(6)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2019-07-09 18:59:26.808 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-09 18:59:26.808 [RMI TCP Connection(3)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
@@ -925,7 +925,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 21:25:21.634 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d55a0456] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2019-07-09 21:25:21.978 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
 2019-07-09 21:25:23.090 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2019-07-09 21:25:23.094 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - No active profile set, falling back to default profiles: default
+2019-07-09 21:25:23.094 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - No active profile set, falling back to default profiles: default
 2019-07-09 21:25:24.406 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2019-07-09 21:25:24.410 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2019-07-09 21:25:24.438 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
@@ -974,7 +974,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 21:25:32.914 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/172.16.11.211:9005 - registration status: 204
 2019-07-09 21:25:32.922 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9005 (http) with context path ''
 2019-07-09 21:25:32.922 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9005
-2019-07-09 21:25:32.926 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - Started ProducerApplication in 12.376 seconds (JVM running for 13.711)
+2019-07-09 21:25:32.926 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - Started ProducerApplication in 12.376 seconds (JVM running for 13.711)
 2019-07-09 21:25:33.250 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2019-07-09 21:25:33.250 [RMI TCP Connection(6)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-09 21:25:33.250 [RMI TCP Connection(6)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
@@ -992,7 +992,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 21:49:51.376 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$db5da263] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2019-07-09 21:49:51.700 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
 2019-07-09 21:49:52.806 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2019-07-09 21:49:52.814 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - No active profile set, falling back to default profiles: default
+2019-07-09 21:49:52.814 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - No active profile set, falling back to default profiles: default
 2019-07-09 21:49:54.098 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2019-07-09 21:49:54.098 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2019-07-09 21:49:54.122 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
@@ -1041,7 +1041,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 21:50:02.686 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/172.16.11.211:9005 - registration status: 204
 2019-07-09 21:50:02.694 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9005 (http) with context path ''
 2019-07-09 21:50:02.694 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9005
-2019-07-09 21:50:02.702 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - Started ProducerApplication in 12.378 seconds (JVM running for 13.779)
+2019-07-09 21:50:02.702 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - Started ProducerApplication in 12.378 seconds (JVM running for 13.779)
 2019-07-09 21:50:03.010 [RMI TCP Connection(6)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2019-07-09 21:50:03.010 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-09 21:50:03.010 [RMI TCP Connection(4)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
@@ -1055,7 +1055,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 22:02:02.054 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1c86561f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2019-07-09 22:02:02.378 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
 2019-07-09 22:02:03.496 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2019-07-09 22:02:03.504 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - No active profile set, falling back to default profiles: default
+2019-07-09 22:02:03.504 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - No active profile set, falling back to default profiles: default
 2019-07-09 22:02:04.808 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2019-07-09 22:02:04.808 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2019-07-09 22:02:04.836 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
@@ -1103,7 +1103,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 22:02:13.092 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9005"]
 2019-07-09 22:02:13.124 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9005 (http) with context path ''
 2019-07-09 22:02:13.124 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9005
-2019-07-09 22:02:13.128 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - Started ProducerApplication in 12.134 seconds (JVM running for 13.48)
+2019-07-09 22:02:13.128 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - Started ProducerApplication in 12.134 seconds (JVM running for 13.48)
 2019-07-09 22:02:13.148 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/172.16.11.211:9005 - registration status: 204
 2019-07-09 22:02:13.276 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2019-07-09 22:02:13.276 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
@@ -1119,7 +1119,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 22:10:23.898 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8b4ed605] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2019-07-09 22:10:24.234 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
 2019-07-09 22:10:25.350 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2019-07-09 22:10:25.358 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - No active profile set, falling back to default profiles: default
+2019-07-09 22:10:25.358 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - No active profile set, falling back to default profiles: default
 2019-07-09 22:10:26.666 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2019-07-09 22:10:26.670 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2019-07-09 22:10:26.690 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
@@ -1168,7 +1168,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 22:10:35.350 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/172.16.11.211:9005 - registration status: 204
 2019-07-09 22:10:35.358 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9005 (http) with context path ''
 2019-07-09 22:10:35.358 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9005
-2019-07-09 22:10:35.358 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - Started ProducerApplication in 12.584 seconds (JVM running for 13.935)
+2019-07-09 22:10:35.358 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - Started ProducerApplication in 12.584 seconds (JVM running for 13.935)
 2019-07-09 22:10:35.882 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2019-07-09 22:10:35.886 [RMI TCP Connection(6)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-09 22:10:35.886 [RMI TCP Connection(6)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
@@ -1183,7 +1183,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 22:18:22.255 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$472bf13c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2019-07-09 22:18:22.579 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
 2019-07-09 22:18:23.687 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2019-07-09 22:18:23.691 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - No active profile set, falling back to default profiles: default
+2019-07-09 22:18:23.691 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - No active profile set, falling back to default profiles: default
 2019-07-09 22:18:24.979 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2019-07-09 22:18:24.979 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2019-07-09 22:18:25.003 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
@@ -1232,7 +1232,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 22:18:33.571 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/172.16.11.211:9005 - registration status: 204
 2019-07-09 22:18:33.571 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9005 (http) with context path ''
 2019-07-09 22:18:33.571 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9005
-2019-07-09 22:18:33.575 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - Started ProducerApplication in 12.384 seconds (JVM running for 13.783)
+2019-07-09 22:18:33.575 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - Started ProducerApplication in 12.384 seconds (JVM running for 13.783)
 2019-07-09 22:18:33.679 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2019-07-09 22:18:33.679 [RMI TCP Connection(6)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-09 22:18:33.679 [RMI TCP Connection(6)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
@@ -1249,7 +1249,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 22:34:29.853 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6dd22f7a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2019-07-09 22:34:30.189 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
 2019-07-09 22:34:31.305 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2019-07-09 22:34:31.313 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - No active profile set, falling back to default profiles: default
+2019-07-09 22:34:31.313 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - No active profile set, falling back to default profiles: default
 2019-07-09 22:34:32.621 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2019-07-09 22:34:32.625 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2019-07-09 22:34:32.645 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
@@ -1298,7 +1298,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 22:34:40.945 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/172.16.11.211:9005 - registration status: 204
 2019-07-09 22:34:40.953 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9005 (http) with context path ''
 2019-07-09 22:34:40.957 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9005
-2019-07-09 22:34:40.957 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - Started ProducerApplication in 12.156 seconds (JVM running for 13.479)
+2019-07-09 22:34:40.957 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - Started ProducerApplication in 12.156 seconds (JVM running for 13.479)
 2019-07-09 22:34:41.357 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2019-07-09 22:34:41.357 [RMI TCP Connection(6)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-09 22:34:41.357 [RMI TCP Connection(6)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
@@ -1312,7 +1312,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 22:45:40.829 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e34e81b9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2019-07-09 22:45:41.173 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
 2019-07-09 22:45:42.269 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2019-07-09 22:45:42.277 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - No active profile set, falling back to default profiles: default
+2019-07-09 22:45:42.277 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - No active profile set, falling back to default profiles: default
 2019-07-09 22:45:43.233 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2019-07-09 22:45:43.237 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2019-07-09 22:45:43.257 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
@@ -1361,7 +1361,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 22:45:50.009 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/172.16.11.211:9005 - registration status: 204
 2019-07-09 22:45:50.017 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9005 (http) with context path ''
 2019-07-09 22:45:50.017 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9005
-2019-07-09 22:45:50.017 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - Started ProducerApplication in 10.432 seconds (JVM running for 11.526)
+2019-07-09 22:45:50.017 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - Started ProducerApplication in 10.432 seconds (JVM running for 11.526)
 2019-07-09 22:45:50.533 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2019-07-09 22:45:50.537 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-09 22:45:50.537 [RMI TCP Connection(4)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
@@ -1375,7 +1375,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 22:46:46.790 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$3e709e7f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2019-07-09 22:46:47.162 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
 2019-07-09 22:46:48.280 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2019-07-09 22:46:48.288 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - No active profile set, falling back to default profiles: default
+2019-07-09 22:46:48.288 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - No active profile set, falling back to default profiles: default
 2019-07-09 22:46:49.548 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2019-07-09 22:46:49.548 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2019-07-09 22:46:49.572 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
@@ -1424,7 +1424,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 22:46:57.780 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/172.16.11.211:9005 - registration status: 204
 2019-07-09 22:46:57.784 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9005 (http) with context path ''
 2019-07-09 22:46:57.784 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9005
-2019-07-09 22:46:57.788 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - Started ProducerApplication in 12.158 seconds (JVM running for 13.506)
+2019-07-09 22:46:57.788 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - Started ProducerApplication in 12.158 seconds (JVM running for 13.506)
 2019-07-09 22:46:57.868 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2019-07-09 22:46:57.868 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-09 22:46:57.868 [RMI TCP Connection(2)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
@@ -1438,7 +1438,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 22:51:28.632 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$dea29fac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2019-07-09 22:51:28.968 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
 2019-07-09 22:51:30.076 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2019-07-09 22:51:30.080 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - No active profile set, falling back to default profiles: default
+2019-07-09 22:51:30.080 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - No active profile set, falling back to default profiles: default
 2019-07-09 22:51:31.352 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2019-07-09 22:51:31.356 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2019-07-09 22:51:31.380 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
@@ -1486,7 +1486,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 22:51:39.553 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9005"]
 2019-07-09 22:51:39.585 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9005 (http) with context path ''
 2019-07-09 22:51:39.585 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9005
-2019-07-09 22:51:39.589 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - Started ProducerApplication in 12.017 seconds (JVM running for 13.385)
+2019-07-09 22:51:39.589 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - Started ProducerApplication in 12.017 seconds (JVM running for 13.385)
 2019-07-09 22:51:39.597 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/172.16.11.211:9005 - registration status: 204
 2019-07-09 22:51:39.765 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2019-07-09 22:51:39.765 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
@@ -1503,7 +1503,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 23:05:40.089 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9d009298] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2019-07-09 23:05:40.417 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
 2019-07-09 23:05:41.529 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2019-07-09 23:05:41.533 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - No active profile set, falling back to default profiles: default
+2019-07-09 23:05:41.533 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - No active profile set, falling back to default profiles: default
 2019-07-09 23:05:42.837 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2019-07-09 23:05:42.837 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2019-07-09 23:05:42.861 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
@@ -1552,7 +1552,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 23:05:51.112 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/172.16.11.211:9005 - registration status: 204
 2019-07-09 23:05:51.124 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9005 (http) with context path ''
 2019-07-09 23:05:51.124 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9005
-2019-07-09 23:05:51.124 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - Started ProducerApplication in 12.099 seconds (JVM running for 13.455)
+2019-07-09 23:05:51.124 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - Started ProducerApplication in 12.099 seconds (JVM running for 13.455)
 2019-07-09 23:05:51.288 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2019-07-09 23:05:51.288 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-09 23:05:51.288 [RMI TCP Connection(2)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
@@ -1566,7 +1566,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 23:10:45.435 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8de996d2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2019-07-09 23:10:45.763 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
 2019-07-09 23:10:46.863 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2019-07-09 23:10:46.867 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - No active profile set, falling back to default profiles: default
+2019-07-09 23:10:46.867 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - No active profile set, falling back to default profiles: default
 2019-07-09 23:10:47.855 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2019-07-09 23:10:47.859 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2019-07-09 23:10:47.879 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
@@ -1615,7 +1615,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 23:10:55.262 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/172.16.11.211:9005 - registration status: 204
 2019-07-09 23:10:55.270 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9005 (http) with context path ''
 2019-07-09 23:10:55.274 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9005
-2019-07-09 23:10:55.274 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - Started ProducerApplication in 10.995 seconds (JVM running for 12.077)
+2019-07-09 23:10:55.274 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - Started ProducerApplication in 10.995 seconds (JVM running for 12.077)
 2019-07-09 23:10:55.486 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2019-07-09 23:10:55.486 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-09 23:10:55.486 [RMI TCP Connection(4)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
@@ -1629,7 +1629,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 23:12:13.694 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ec31d0b0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2019-07-09 23:12:14.022 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
 2019-07-09 23:12:15.118 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2019-07-09 23:12:15.122 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - No active profile set, falling back to default profiles: default
+2019-07-09 23:12:15.122 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - No active profile set, falling back to default profiles: default
 2019-07-09 23:12:16.098 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2019-07-09 23:12:16.098 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2019-07-09 23:12:16.118 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
@@ -1678,7 +1678,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 23:12:23.173 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/172.16.11.211:9005 - registration status: 204
 2019-07-09 23:12:23.181 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9005 (http) with context path ''
 2019-07-09 23:12:23.181 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9005
-2019-07-09 23:12:23.185 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - Started ProducerApplication in 10.667 seconds (JVM running for 11.705)
+2019-07-09 23:12:23.185 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - Started ProducerApplication in 10.667 seconds (JVM running for 11.705)
 2019-07-09 23:12:23.273 [RMI TCP Connection(6)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2019-07-09 23:12:23.273 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-09 23:12:23.273 [RMI TCP Connection(4)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
@@ -1692,7 +1692,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 23:13:09.346 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9277421a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2019-07-09 23:13:09.670 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
 2019-07-09 23:13:10.758 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2019-07-09 23:13:10.766 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - No active profile set, falling back to default profiles: default
+2019-07-09 23:13:10.766 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - No active profile set, falling back to default profiles: default
 2019-07-09 23:13:11.726 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2019-07-09 23:13:11.726 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2019-07-09 23:13:11.746 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
@@ -1741,7 +1741,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 23:13:18.901 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/172.16.11.211:9005 - registration status: 204
 2019-07-09 23:13:18.909 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9005 (http) with context path ''
 2019-07-09 23:13:18.909 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9005
-2019-07-09 23:13:18.913 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - Started ProducerApplication in 10.687 seconds (JVM running for 11.781)
+2019-07-09 23:13:18.913 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - Started ProducerApplication in 10.687 seconds (JVM running for 11.781)
 2019-07-09 23:13:19.237 [http-nio-9005-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-09 23:13:19.237 [http-nio-9005-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2019-07-09 23:13:19.261 [http-nio-9005-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 24 ms
@@ -1755,7 +1755,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 23:14:04.524 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5bc75ee0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2019-07-09 23:14:04.860 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
 2019-07-09 23:14:05.952 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2019-07-09 23:14:05.956 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - No active profile set, falling back to default profiles: default
+2019-07-09 23:14:05.956 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - No active profile set, falling back to default profiles: default
 2019-07-09 23:14:06.940 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2019-07-09 23:14:06.940 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2019-07-09 23:14:06.960 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
@@ -1804,7 +1804,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 23:14:13.767 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/172.16.11.211:9005 - registration status: 204
 2019-07-09 23:14:13.775 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9005 (http) with context path ''
 2019-07-09 23:14:13.775 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9005
-2019-07-09 23:14:13.779 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - Started ProducerApplication in 10.387 seconds (JVM running for 11.464)
+2019-07-09 23:14:13.779 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - Started ProducerApplication in 10.387 seconds (JVM running for 11.464)
 2019-07-09 23:14:14.247 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2019-07-09 23:14:14.247 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-09 23:14:14.247 [RMI TCP Connection(2)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
@@ -1818,7 +1818,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 23:15:02.761 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$67966f33] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 2019-07-09 23:15:03.097 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
 2019-07-09 23:15:04.185 [restartedMain] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
-2019-07-09 23:15:04.188 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - No active profile set, falling back to default profiles: default
+2019-07-09 23:15:04.188 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - No active profile set, falling back to default profiles: default
 2019-07-09 23:15:05.180 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
 2019-07-09 23:15:05.184 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
 2019-07-09 23:15:05.204 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
@@ -1867,7 +1867,7 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 2019-07-09 23:15:11.944 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_PRODUCER/172.16.11.211:9005 - registration status: 204
 2019-07-09 23:15:11.948 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9005 (http) with context path ''
 2019-07-09 23:15:11.952 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9005
-2019-07-09 23:15:11.952 [restartedMain] INFO  com.sieyuan.producer.ProducerApplication - Started ProducerApplication in 10.311 seconds (JVM running for 11.374)
+2019-07-09 23:15:11.952 [restartedMain] INFO  com.sieyuan.apple.ProducerApplication - Started ProducerApplication in 10.311 seconds (JVM running for 11.374)
 2019-07-09 23:15:12.476 [RMI TCP Connection(2)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
 2019-07-09 23:15:12.480 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-07-09 23:15:12.480 [RMI TCP Connection(4)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'

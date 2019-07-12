@@ -1,37 +1,37 @@
-2019-07-09 22:10:49.197 [http-nio-9005-exec-1] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - ==>  Preparing: SELECT person.id AS "id", person.test AS "test", Idcard.id AS "idcard.id", Idcard.test AS "idcard.test", Idcard.personId AS "idcard.personId" FROM person LEFT JOIN Idcard on Idcard.id = person.id 
-2019-07-09 22:10:49.233 [http-nio-9005-exec-1] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - ==> Parameters: 
-2019-07-09 22:10:49.249 [http-nio-9005-exec-1] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - <==      Total: 3
-2019-07-09 22:18:34.063 [http-nio-9005-exec-1] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - ==>  Preparing: SELECT person.id AS "id", person.test AS "test", Idcard.id AS "idcard.id", Idcard.test AS "idcard.test", Idcard.personId AS "idcard.personId" FROM person LEFT JOIN Idcard on Idcard.personId = person.id 
-2019-07-09 22:18:34.091 [http-nio-9005-exec-1] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - ==> Parameters: 
-2019-07-09 22:18:34.111 [http-nio-9005-exec-1] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - <==      Total: 6
-2019-07-09 22:19:15.079 [http-nio-9005-exec-3] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - ==>  Preparing: SELECT person.id AS "id", person.test AS "test", Idcard.id AS "idcard.id", Idcard.test AS "idcard.test", Idcard.personId AS "idcard.personId" FROM person LEFT JOIN Idcard on Idcard.personId = person.id 
-2019-07-09 22:19:15.083 [http-nio-9005-exec-3] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - ==> Parameters: 
-2019-07-09 22:19:15.099 [http-nio-9005-exec-3] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - <==      Total: 6
-2019-07-09 22:34:51.397 [http-nio-9005-exec-2] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - ==>  Preparing: SELECT person.id AS "id", person.test AS "test", idcard.id AS "idcard.id", idcard.test AS "idcard.test", idcard.personId AS "idcard.personId" FROM person LEFT JOIN idcard on idcard.personId = person.id 
-2019-07-09 22:34:51.425 [http-nio-9005-exec-2] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - ==> Parameters: 
-2019-07-09 22:34:51.437 [http-nio-9005-exec-2] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - <==      Total: 6
-2019-07-09 22:45:57.242 [http-nio-9005-exec-1] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - ==>  Preparing: select person.*,idcard.* from person, idcard where person.id = id.personId 
-2019-07-09 22:45:57.262 [http-nio-9005-exec-1] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - ==> Parameters: 
-2019-07-09 22:47:12.600 [http-nio-9005-exec-2] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - ==>  Preparing: select person.*,idcard.* from person, idcard where person.id = idcard.personId 
-2019-07-09 22:47:12.632 [http-nio-9005-exec-2] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - ==> Parameters: 
-2019-07-09 22:47:12.648 [http-nio-9005-exec-2] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - <==      Total: 6
-2019-07-09 22:53:41.344 [http-nio-9005-exec-2] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - ==>  Preparing: SELECT person.id AS "id", person.test AS "test", idcard.id AS "idcard.id", idcard.test AS "idcard.test", idcard.personId AS "idcard.personId" FROM person LEFT JOIN idcard on idcard.personId = person.id 
-2019-07-09 22:53:41.372 [http-nio-9005-exec-2] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - ==> Parameters: 
-2019-07-09 22:53:41.412 [http-nio-9005-exec-2] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - <==      Total: 6
-2019-07-09 23:06:07.937 [http-nio-9005-exec-3] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - ==>  Preparing: SELECT person.*,idcard.* FROM person LEFT JOIN idcard on idcard.personId = person.id 
-2019-07-09 23:06:07.969 [http-nio-9005-exec-3] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - ==> Parameters: 
-2019-07-09 23:06:07.988 [http-nio-9005-exec-3] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - <==      Total: 6
-2019-07-09 23:10:56.142 [http-nio-9005-exec-1] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - ==>  Preparing: SELECT person.id , person.test , idcard.id , idcard.test idcard.personId FROM person LEFT JOIN idcard on idcard.personId = person.id 
-2019-07-09 23:10:56.158 [http-nio-9005-exec-1] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - ==> Parameters: 
-2019-07-09 23:12:23.577 [http-nio-9005-exec-2] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - ==>  Preparing: SELECT person.id , person.test , idcard.id , idcard.test, idcard.personId FROM person LEFT JOIN idcard on idcard.personId = person.id 
-2019-07-09 23:12:23.605 [http-nio-9005-exec-2] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - ==> Parameters: 
-2019-07-09 23:12:23.621 [http-nio-9005-exec-2] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - <==      Total: 6
-2019-07-09 23:13:19.461 [http-nio-9005-exec-1] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - ==>  Preparing: SELECT person.id AS "id", person.test AS "test", idcard.id AS "idcard.id", idcard.test AS "idcard.test", idcard.personId AS "idcard.personId" FROM person LEFT JOIN idcard on idcard.personId = person.id 
-2019-07-09 23:13:19.485 [http-nio-9005-exec-1] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - ==> Parameters: 
-2019-07-09 23:13:19.497 [http-nio-9005-exec-1] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - <==      Total: 6
-2019-07-09 23:14:25.615 [http-nio-9005-exec-2] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - ==>  Preparing: SELECT person.id AS "id", person.test AS "test", idcard.id AS "idcard.id", idcard.test AS "idcard.test", idcard.personId FROM person LEFT JOIN idcard on idcard.personId = person.id 
-2019-07-09 23:14:25.635 [http-nio-9005-exec-2] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - ==> Parameters: 
-2019-07-09 23:14:25.647 [http-nio-9005-exec-2] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - <==      Total: 6
-2019-07-09 23:16:54.600 [http-nio-9005-exec-1] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - ==>  Preparing: SELECT person.id AS "id", person.test AS "test", idcard.id AS "idcard.id", idcard.test AS "idcard.test", idcard.personId AS "idcard.personId" FROM person LEFT JOIN idcard on idcard.personId = person.id 
-2019-07-09 23:16:54.620 [http-nio-9005-exec-1] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - ==> Parameters: 
-2019-07-09 23:16:54.632 [http-nio-9005-exec-1] DEBUG com.sieyuan.producer.dao.PersonDao.findAllList - <==      Total: 6
+2019-07-09 22:10:49.197 [http-nio-9005-exec-1] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==>  Preparing: SELECT person.id AS "id", person.test AS "test", Idcard.id AS "idcard.id", Idcard.test AS "idcard.test", Idcard.personId AS "idcard.personId" FROM person LEFT JOIN Idcard on Idcard.id = person.id
+2019-07-09 22:10:49.233 [http-nio-9005-exec-1] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==> Parameters:
+2019-07-09 22:10:49.249 [http-nio-9005-exec-1] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - <==      Total: 3
+2019-07-09 22:18:34.063 [http-nio-9005-exec-1] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==>  Preparing: SELECT person.id AS "id", person.test AS "test", Idcard.id AS "idcard.id", Idcard.test AS "idcard.test", Idcard.personId AS "idcard.personId" FROM person LEFT JOIN Idcard on Idcard.personId = person.id
+2019-07-09 22:18:34.091 [http-nio-9005-exec-1] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==> Parameters:
+2019-07-09 22:18:34.111 [http-nio-9005-exec-1] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - <==      Total: 6
+2019-07-09 22:19:15.079 [http-nio-9005-exec-3] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==>  Preparing: SELECT person.id AS "id", person.test AS "test", Idcard.id AS "idcard.id", Idcard.test AS "idcard.test", Idcard.personId AS "idcard.personId" FROM person LEFT JOIN Idcard on Idcard.personId = person.id
+2019-07-09 22:19:15.083 [http-nio-9005-exec-3] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==> Parameters:
+2019-07-09 22:19:15.099 [http-nio-9005-exec-3] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - <==      Total: 6
+2019-07-09 22:34:51.397 [http-nio-9005-exec-2] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==>  Preparing: SELECT person.id AS "id", person.test AS "test", idcard.id AS "idcard.id", idcard.test AS "idcard.test", idcard.personId AS "idcard.personId" FROM person LEFT JOIN idcard on idcard.personId = person.id
+2019-07-09 22:34:51.425 [http-nio-9005-exec-2] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==> Parameters:
+2019-07-09 22:34:51.437 [http-nio-9005-exec-2] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - <==      Total: 6
+2019-07-09 22:45:57.242 [http-nio-9005-exec-1] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==>  Preparing: select person.*,idcard.* from person, idcard where person.id = id.personId
+2019-07-09 22:45:57.262 [http-nio-9005-exec-1] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==> Parameters:
+2019-07-09 22:47:12.600 [http-nio-9005-exec-2] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==>  Preparing: select person.*,idcard.* from person, idcard where person.id = idcard.personId
+2019-07-09 22:47:12.632 [http-nio-9005-exec-2] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==> Parameters:
+2019-07-09 22:47:12.648 [http-nio-9005-exec-2] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - <==      Total: 6
+2019-07-09 22:53:41.344 [http-nio-9005-exec-2] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==>  Preparing: SELECT person.id AS "id", person.test AS "test", idcard.id AS "idcard.id", idcard.test AS "idcard.test", idcard.personId AS "idcard.personId" FROM person LEFT JOIN idcard on idcard.personId = person.id
+2019-07-09 22:53:41.372 [http-nio-9005-exec-2] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==> Parameters:
+2019-07-09 22:53:41.412 [http-nio-9005-exec-2] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - <==      Total: 6
+2019-07-09 23:06:07.937 [http-nio-9005-exec-3] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==>  Preparing: SELECT person.*,idcard.* FROM person LEFT JOIN idcard on idcard.personId = person.id
+2019-07-09 23:06:07.969 [http-nio-9005-exec-3] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==> Parameters:
+2019-07-09 23:06:07.988 [http-nio-9005-exec-3] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - <==      Total: 6
+2019-07-09 23:10:56.142 [http-nio-9005-exec-1] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==>  Preparing: SELECT person.id , person.test , idcard.id , idcard.test idcard.personId FROM person LEFT JOIN idcard on idcard.personId = person.id
+2019-07-09 23:10:56.158 [http-nio-9005-exec-1] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==> Parameters:
+2019-07-09 23:12:23.577 [http-nio-9005-exec-2] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==>  Preparing: SELECT person.id , person.test , idcard.id , idcard.test, idcard.personId FROM person LEFT JOIN idcard on idcard.personId = person.id
+2019-07-09 23:12:23.605 [http-nio-9005-exec-2] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==> Parameters:
+2019-07-09 23:12:23.621 [http-nio-9005-exec-2] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - <==      Total: 6
+2019-07-09 23:13:19.461 [http-nio-9005-exec-1] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==>  Preparing: SELECT person.id AS "id", person.test AS "test", idcard.id AS "idcard.id", idcard.test AS "idcard.test", idcard.personId AS "idcard.personId" FROM person LEFT JOIN idcard on idcard.personId = person.id
+2019-07-09 23:13:19.485 [http-nio-9005-exec-1] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==> Parameters:
+2019-07-09 23:13:19.497 [http-nio-9005-exec-1] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - <==      Total: 6
+2019-07-09 23:14:25.615 [http-nio-9005-exec-2] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==>  Preparing: SELECT person.id AS "id", person.test AS "test", idcard.id AS "idcard.id", idcard.test AS "idcard.test", idcard.personId FROM person LEFT JOIN idcard on idcard.personId = person.id
+2019-07-09 23:14:25.635 [http-nio-9005-exec-2] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==> Parameters:
+2019-07-09 23:14:25.647 [http-nio-9005-exec-2] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - <==      Total: 6
+2019-07-09 23:16:54.600 [http-nio-9005-exec-1] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==>  Preparing: SELECT person.id AS "id", person.test AS "test", idcard.id AS "idcard.id", idcard.test AS "idcard.test", idcard.personId AS "idcard.personId" FROM person LEFT JOIN idcard on idcard.personId = person.id
+2019-07-09 23:16:54.620 [http-nio-9005-exec-1] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==> Parameters:
+2019-07-09 23:16:54.632 [http-nio-9005-exec-1] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - <==      Total: 6

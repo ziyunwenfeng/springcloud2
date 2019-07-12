@@ -1,8 +1,6 @@
-package com.sieyuan.producer.utils;
+package com.sieyuan.apple.utils;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Component;
@@ -15,7 +13,7 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @program: producer
+ * @program: apple
  * @description: RedisUtil
  * @author: wenfeng
  * @create: 2019-06-12 23:23
