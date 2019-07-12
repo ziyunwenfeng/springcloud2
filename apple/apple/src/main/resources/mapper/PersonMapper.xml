@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sieyuan.producer.dao.PersonDao">
+
+    <resultMap id="personResultMap" type="com.sieyuan.producer.entity.Person">
+        <id column="id" property="id"/> 
+        <result column="nickname" property="nickname"/> 
+
+        
+        <collection property="idcards" ofType="com.sieyuan.producer.entity.Idcard">
+            <id column="id" property="id"/> 
+            <result column="idname" property="idname"/> 
+            <result column="personId" property="personId"/> 
+        </collection>
+    </resultMap>
+
+    <sql id="personColumns">
+        person.id,
+        person.nickname,
+        idcard.id,
+        idcard.idname,
+        idcard.personId
+    </sql>
+
+    <sql id="personJoins">
+        LEFT JOIN idcard on idcard.personId = person.id
+    </sql>
+
+    <select id="get" resultMap="personResultMap">
+        SELECT
+        <include refid="personColumns" />
+        FROM person <include refid="personJoins" />
+        <where>
+        person.id = #{id}
+        </where>
+    </select>
+
+    <select id="findList" resultMap="personResultMap">
+        SELECT
+        <include refid="personColumns" />
+        FROM person <include refid="personJoins" />
+        <where>
+        </where>
+    </select>
+
+    <select id="findAllList" resultMap="personResultMap">
+        SELECT
+        <include refid="personColumns" />
+        FROM person <include refid="personJoins" />
+        <where>
+        </where>
+    </select>
+
+    <insert id="insert">
+        INSERT INTO person(
+            id,
+            nickname
+        )
+        VALUES (
+            #{id},
+            #{nickname}
+        )
+    </insert>
+
+    <insert id="insertBatch">
+        INSERT INTO person(
+            id,
+            nickname
+        )
+        VALUES
+        <foreach collection ="list" item="person" separator =",">
+        (
+            #{person.id},
+            #{person.nickname}
+        )
+        </foreach>
+    </insert>
+
+    <update id="update">
+        UPDATE person SET
+        id = #{id},
+        nickname = #{nickname}
+        WHERE id = #{id}
+    </update>
+
+    <update id="delete">
+        DELETE FROM person
+        WHERE id = #{id}
+    </update>
+
+    <update id="deleteById">
+        DELETE FROM person
+        WHERE id = #{id}
+    </update>
+
+</mapper>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sieyuan.producer.dao.OrgDao">
+
+    <resultMap id="orgResultMap" type="com.sieyuan.producer.entity.Org">
+        <id column="id" property="id"/> 
+        <result column="test" property="test"/> 
+
+        
+        <collection property="cous" ofType="com.sieyuan.producer.entity.Cou">
+            <id column="cous.id" property="id"/> 
+            <result column="cous.test" property="test"/> 
+        </collection>
+    </resultMap>
+
+    <sql id="orgColumns">
+        org.id AS "id",
+        org.test AS "test",
+        cou.id AS "cous.id",
+        cou.test AS "cous.test"
+    </sql>
+
+    <sql id="orgJoins">
+        LEFT JOIN cou_org on cou_org.orgId = org.id 
+        LEFT JOIN cou on cou.id = cou_org.couId
+    </sql>
+
+    <select id="get" resultMap="orgResultMap">
+        SELECT
+        <include refid="orgColumns" />
+        FROM org <include refid="orgJoins" />
+        <where>
+        org.id = #{id}
+        </where>
+    </select>
+
+    <select id="findList" resultMap="orgResultMap">
+        SELECT
+        <include refid="orgColumns" />
+        FROM org <include refid="orgJoins" />
+        <where>
+        </where>
+    </select>
+
+    <select id="findAllList" resultMap="orgResultMap">
+        SELECT
+        <include refid="orgColumns" />
+        FROM org <include refid="orgJoins" />
+        <where>
+        </where>
+    </select>
+
+    <insert id="insert">
+        INSERT INTO org(
+            id,
+            test
+        )
+        VALUES (
+            #{id},
+            #{test}
+        )
+    </insert>
+
+    <insert id="insertBatch">
+        INSERT INTO org(
+            id,
+            test
+        )
+        VALUES
+        <foreach collection ="list" item="org" separator =",">
+        (
+            #{org.id},
+            #{org.test}
+        )
+        </foreach>
+    </insert>
+
+    <update id="update">
+        UPDATE org SET
+        id = #{id},
+        test = #{test}
+        WHERE id = #{id}
+    </update>
+
+    <update id="delete">
+        DELETE FROM org
+        WHERE id = #{id}
+    </update>
+
+    <update id="deleteById">
+        DELETE FROM org
+        WHERE id = #{id}
+    </update>
+
+</mapper>
