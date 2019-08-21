@@ -1,0 +1,2 @@
+<id column="id" property="id"/>
+        <result column="test" property="test"/>

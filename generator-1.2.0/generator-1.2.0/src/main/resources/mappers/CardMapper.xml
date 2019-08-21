@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao.CardDao">
+
+    <resultMap id="cardResultMap" type="entity.Card">
+        <id column="cardNo" property="cardNo"/> 
+        <result column="physicalCardNo" property="physicalCardNo"/> 
+        <result column="operatorId" property="operatorId"/> 
+        <result column="activeTime" property="activeTime"/> 
+        <result column="password" property="password"/> 
+        <result column="lastChargeTime" property="lastChargeTime"/> 
+        <result column="balance" property="balance"/> 
+        <result column="lastPayAmount" property="lastPayAmount"/> 
+        <result column="payTotalAmount" property="payTotalAmount"/> 
+        <result column="cardType" property="cardType"/> 
+        <result column="createTime" property="createTime"/> 
+        <result column="cardState" property="cardState"/> 
+        <result column="phone" property="phone"/> 
+        <result column="lostDate" property="lostDate"/> 
+        <result column="offDate" property="offDate"/> 
+        <result column="allowNegative" property="allowNegative"/> 
+        <result column="customerId" property="customerId"/> 
+        <result column="rateGroupId" property="rateGroupId"/> 
+        <result column="virtualId" property="virtualId"/> 
+        <result column="cardCheckFlag" property="cardCheckFlag"/> 
+        <result column="discountAmount" property="discountAmount"/> 
+
+        
+        
+    </resultMap>
+
+    <sql id="cardColumns">
+        t_card.card_no AS "cardNo",
+        t_card.physical_card_no AS "physicalCardNo",
+        t_card.operator_id AS "operatorId",
+        t_card.active_time AS "activeTime",
+        t_card.password AS "password",
+        t_card.last_charge_time AS "lastChargeTime",
+        t_card.balance AS "balance",
+        t_card.last_pay_amount AS "lastPayAmount",
+        t_card.pay_total_amount AS "payTotalAmount",
+        t_card.card_type AS "cardType",
+        t_card.create_time AS "createTime",
+        t_card.card_state AS "cardState",
+        t_card.phone AS "phone",
+        t_card.lost_date AS "lostDate",
+        t_card.off_date AS "offDate",
+        t_card.allow_negative AS "allowNegative",
+        t_card.customer_id AS "customerId",
+        t_card.rate_group_id AS "rateGroupId",
+        t_card.virtual_id AS "virtualId",
+        t_card.card_check_flag AS "cardCheckFlag",
+        t_card.discount_amount AS "discountAmount"
+    </sql>
+
+    <sql id="cardJoins">
+        
+    </sql>
+
+    <select id="get" resultMap="cardResultMap">
+        SELECT
+        <include refid="cardColumns" />
+        FROM t_card <include refid="cardJoins" />
+        <where>
+        t_card.card_no = #{id}
+        </where>
+    </select>
+
+    <select id="findList" resultMap="cardResultMap">
+        SELECT
+        <include refid="cardColumns" />
+        FROM t_card <include refid="cardJoins" />
+        <where>
+        </where>
+    </select>
+
+    <select id="findAllList" resultMap="cardResultMap">
+        SELECT
+        <include refid="cardColumns" />
+        FROM t_card <include refid="cardJoins" />
+        <where>
+        </where>
+    </select>
+
+    <insert id="insert">
+        INSERT INTO t_card(
+            card_no,
+            physical_card_no,
+            operator_id,
+            active_time,
+            password,
+            last_charge_time,
+            balance,
+            last_pay_amount,
+            pay_total_amount,
+            card_type,
+            create_time,
+            card_state,
+            phone,
+            lost_date,
+            off_date,
+            allow_negative,
+            customer_id,
+            rate_group_id,
+            virtual_id,
+            card_check_flag,
+            discount_amount
+        )
+        VALUES (
+            #{cardNo},
+            #{physicalCardNo},
+            #{operatorId},
+            #{activeTime},
+            #{password},
+            #{lastChargeTime},
+            #{balance},
+            #{lastPayAmount},
+            #{payTotalAmount},
+            #{cardType},
+            #{createTime},
+            #{cardState},
+            #{phone},
+            #{lostDate},
+            #{offDate},
+            #{allowNegative},
+            #{customerId},
+            #{rateGroupId},
+            #{virtualId},
+            #{cardCheckFlag},
+            #{discountAmount}
+        )
+    </insert>
+
+    <insert id="insertBatch">
+        INSERT INTO t_card(
+            card_no,
+            physical_card_no,
+            operator_id,
+            active_time,
+            password,
+            last_charge_time,
+            balance,
+            last_pay_amount,
+            pay_total_amount,
+            card_type,
+            create_time,
+            card_state,
+            phone,
+            lost_date,
+            off_date,
+            allow_negative,
+            customer_id,
+            rate_group_id,
+            virtual_id,
+            card_check_flag,
+            discount_amount
+        )
+        VALUES
+        <foreach collection ="list" item="card" separator =",">
+        (
+            #{card.cardNo},
+            #{card.physicalCardNo},
+            #{card.operatorId},
+            #{card.activeTime},
+            #{card.password},
+            #{card.lastChargeTime},
+            #{card.balance},
+            #{card.lastPayAmount},
+            #{card.payTotalAmount},
+            #{card.cardType},
+            #{card.createTime},
+            #{card.cardState},
+            #{card.phone},
+            #{card.lostDate},
+            #{card.offDate},
+            #{card.allowNegative},
+            #{card.customerId},
+            #{card.rateGroupId},
+            #{card.virtualId},
+            #{card.cardCheckFlag},
+            #{card.discountAmount}
+        )
+        </foreach>
+    </insert>
+
+    <update id="update">
+        UPDATE t_card SET
+        card_no = #{cardNo},
+        physical_card_no = #{physicalCardNo},
+        operator_id = #{operatorId},
+        active_time = #{activeTime},
+        password = #{password},
+        last_charge_time = #{lastChargeTime},
+        balance = #{balance},
+        last_pay_amount = #{lastPayAmount},
+        pay_total_amount = #{payTotalAmount},
+        card_type = #{cardType},
+        create_time = #{createTime},
+        card_state = #{cardState},
+        phone = #{phone},
+        lost_date = #{lostDate},
+        off_date = #{offDate},
+        allow_negative = #{allowNegative},
+        customer_id = #{customerId},
+        rate_group_id = #{rateGroupId},
+        virtual_id = #{virtualId},
+        card_check_flag = #{cardCheckFlag},
+        discount_amount = #{discountAmount}
+        WHERE card_no = #{cardNo}
+    </update>
+
+    <update id="delete">
+        DELETE FROM t_card
+        WHERE card_no = #{cardNo}
+    </update>
+
+    <update id="deleteById">
+        DELETE FROM t_card
+        WHERE card_no = #{cardNo}
+    </update>
+
+</mapper>
