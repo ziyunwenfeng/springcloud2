@@ -1,6 +1,0 @@
-2019-07-08 19:15:53.778 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2019-07-08 19:15:55.017 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-07-08 19:15:56.535 [main] WARN  o.s.c.netflix.archaius.ArchaiusAutoConfiguration - No spring.application.name found, defaulting to 'application'
-2019-07-08 19:15:56.536 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-07-08 19:16:20.002 [http-nio-1111-exec-2] WARN  c.netflix.eureka.registry.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: PRODUCER - 192.168.40.76:9005
-2019-07-08 19:16:20.002 [http-nio-1111-exec-2] WARN  com.netflix.eureka.resources.InstanceResource - Not Found (Renew): PRODUCER - 192.168.40.76:9005

@@ -1,0 +1,99 @@
+2019-07-10 08:58:10.527 [http-nio-9005-exec-1] DEBUG com.sieyuan.apple.dao.TestDao.findAllList - ==>  Preparing: SELECT test.id AS "id", test.test AS "test" FROM test
+2019-07-10 08:58:10.545 [http-nio-9005-exec-1] DEBUG com.sieyuan.apple.dao.TestDao.findAllList - ==> Parameters:
+2019-07-10 08:58:10.581 [http-nio-9005-exec-1] DEBUG com.sieyuan.apple.dao.TestDao.findAllList - <==      Total: 5
+2019-07-10 08:58:21.989 [http-nio-9005-exec-4] DEBUG com.sieyuan.apple.dao.TestDao.get - ==>  Preparing: SELECT test.id AS "id", test.test AS "test" FROM test WHERE test.id = ?
+2019-07-10 08:58:21.990 [http-nio-9005-exec-4] DEBUG com.sieyuan.apple.dao.TestDao.get - ==> Parameters: 1(Integer)
+2019-07-10 08:58:21.990 [http-nio-9005-exec-4] DEBUG com.sieyuan.apple.dao.TestDao.get - <==      Total: 0
+2019-07-10 08:58:26.057 [http-nio-9005-exec-3] DEBUG com.sieyuan.apple.dao.TestDao.get - ==>  Preparing: SELECT test.id AS "id", test.test AS "test" FROM test WHERE test.id = ?
+2019-07-10 08:58:26.057 [http-nio-9005-exec-3] DEBUG com.sieyuan.apple.dao.TestDao.get - ==> Parameters: 2(Integer)
+2019-07-10 08:58:26.058 [http-nio-9005-exec-3] DEBUG com.sieyuan.apple.dao.TestDao.get - <==      Total: 1
+2019-07-10 08:58:29.282 [http-nio-9005-exec-5] DEBUG com.sieyuan.apple.dao.TestDao.get - ==>  Preparing: SELECT test.id AS "id", test.test AS "test" FROM test WHERE test.id = ?
+2019-07-10 08:58:29.282 [http-nio-9005-exec-5] DEBUG com.sieyuan.apple.dao.TestDao.get - ==> Parameters: 3(Integer)
+2019-07-10 08:58:29.283 [http-nio-9005-exec-5] DEBUG com.sieyuan.apple.dao.TestDao.get - <==      Total: 1
+2019-07-10 09:04:43.464 [http-nio-9005-exec-2] DEBUG com.sieyuan.apple.dao.TestDao.delete2 - ==>  Preparing: s DELETE FROM test WHERE id = ?
+2019-07-10 09:04:43.479 [http-nio-9005-exec-2] DEBUG com.sieyuan.apple.dao.TestDao.delete2 - ==> Parameters: 2(Integer)
+2019-07-10 09:16:43.279 [http-nio-9005-exec-1] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==>  Preparing: SELECT person.id AS "id", person.test AS "test", idcard.id AS "idcard.id", idcard.test AS "idcard.test", idcard.personId AS "personId" FROM person LEFT JOIN idcard on idcard.personId = person.id
+2019-07-10 09:16:43.322 [http-nio-9005-exec-1] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==> Parameters:
+2019-07-10 09:16:43.331 [http-nio-9005-exec-1] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - <==      Total: 6
+2019-07-10 13:51:44.490 [http-nio-9005-exec-1] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==>  Preparing: SELECT person.id , person.test , idcard.id , idcard.test , idcard.personId FROM person LEFT JOIN idcard on idcard.personId = person.id
+2019-07-10 13:51:44.505 [http-nio-9005-exec-1] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==> Parameters:
+2019-07-10 13:51:44.515 [http-nio-9005-exec-1] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - <==      Total: 6
+2019-07-10 13:51:46.218 [http-nio-9005-exec-2] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==>  Preparing: SELECT person.id , person.test , idcard.id , idcard.test , idcard.personId FROM person LEFT JOIN idcard on idcard.personId = person.id
+2019-07-10 13:51:46.219 [http-nio-9005-exec-2] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==> Parameters:
+2019-07-10 13:51:46.220 [http-nio-9005-exec-2] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - <==      Total: 6
+2019-07-10 13:53:06.844 [http-nio-9005-exec-4] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==>  Preparing: SELECT person.id , person.test , idcard.id , idcard.test , idcard.personId FROM person LEFT JOIN idcard on idcard.personId = person.id
+2019-07-10 13:53:06.858 [http-nio-9005-exec-4] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==> Parameters:
+2019-07-10 13:53:06.867 [http-nio-9005-exec-4] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - <==      Total: 6
+2019-07-10 16:49:47.062 [http-nio-9005-exec-2] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==>  Preparing: SELECT person.id", person.test", idcard.id", idcard.test", idcard.personId" FROM person LEFT JOIN idcard on idcard.personId = person.id
+2019-07-10 16:49:47.076 [http-nio-9005-exec-2] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==> Parameters:
+2019-07-10 19:30:38.950 [http-nio-9005-exec-2] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==>  Preparing: SELECT person.id, person.test, idcard.id, idcard.test, idcard.personId FROM person LEFT JOIN idcard on idcard.personId = person.id
+2019-07-10 19:30:38.965 [http-nio-9005-exec-2] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==> Parameters:
+2019-07-10 19:30:38.979 [http-nio-9005-exec-2] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - <==      Total: 6
+2019-07-10 19:44:18.280 [http-nio-9005-exec-2] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==>  Preparing: SELECT person.id, person.nickname, idcard.id, idcard.idname, idcard.personId FROM person LEFT JOIN idcard on idcard.personId = person.id
+2019-07-10 19:44:18.296 [http-nio-9005-exec-2] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - ==> Parameters:
+2019-07-10 19:44:18.296 [http-nio-9005-exec-2] DEBUG com.sieyuan.apple.dao.PersonDao.findAllList - <==      Total: 6
+2019-07-12 11:37:35.433 [http-nio-9020-exec-2] DEBUG com.sieyuan.apple.dao.TestDao.findAllList_COUNT - ==>  Preparing: SELECT count(0) FROM test 
+2019-07-12 11:37:35.452 [http-nio-9020-exec-2] DEBUG com.sieyuan.apple.dao.TestDao.findAllList_COUNT - ==> Parameters: 
+2019-07-12 11:37:35.477 [http-nio-9020-exec-2] DEBUG com.sieyuan.apple.dao.TestDao.findAllList_COUNT - <==      Total: 1
+2019-07-12 11:37:35.480 [http-nio-9020-exec-2] DEBUG com.sieyuan.apple.dao.TestDao.findAllList - ==>  Preparing: SELECT test.id , test.test FROM test LIMIT ?, ? 
+2019-07-12 11:37:35.480 [http-nio-9020-exec-2] DEBUG com.sieyuan.apple.dao.TestDao.findAllList - ==> Parameters: 2(Integer), 2(Integer)
+2019-07-12 11:37:35.482 [http-nio-9020-exec-2] DEBUG com.sieyuan.apple.dao.TestDao.findAllList - <==      Total: 2
+2019-07-12 11:39:02.420 [http-nio-9020-exec-9] DEBUG com.sieyuan.apple.dao.TestDao.findAllList_COUNT - ==>  Preparing: SELECT count(0) FROM test 
+2019-07-12 11:39:02.420 [http-nio-9020-exec-9] DEBUG com.sieyuan.apple.dao.TestDao.findAllList_COUNT - ==> Parameters: 
+2019-07-12 11:39:02.422 [http-nio-9020-exec-9] DEBUG com.sieyuan.apple.dao.TestDao.findAllList_COUNT - <==      Total: 1
+2019-07-12 11:39:02.422 [http-nio-9020-exec-9] DEBUG com.sieyuan.apple.dao.TestDao.findAllList - ==>  Preparing: SELECT test.id , test.test FROM test LIMIT ?, ? 
+2019-07-12 11:39:02.423 [http-nio-9020-exec-9] DEBUG com.sieyuan.apple.dao.TestDao.findAllList - ==> Parameters: 2(Integer), 2(Integer)
+2019-07-12 11:39:02.424 [http-nio-9020-exec-9] DEBUG com.sieyuan.apple.dao.TestDao.findAllList - <==      Total: 2
+2019-07-12 11:40:26.291 [http-nio-9020-exec-2] DEBUG com.sieyuan.apple.dao.TestDao.findAllList_COUNT - ==>  Preparing: SELECT count(0) FROM test 
+2019-07-12 11:40:26.309 [http-nio-9020-exec-2] DEBUG com.sieyuan.apple.dao.TestDao.findAllList_COUNT - ==> Parameters: 
+2019-07-12 11:40:26.327 [http-nio-9020-exec-2] DEBUG com.sieyuan.apple.dao.TestDao.findAllList_COUNT - <==      Total: 1
+2019-07-12 11:40:26.330 [http-nio-9020-exec-2] DEBUG com.sieyuan.apple.dao.TestDao.findAllList - ==>  Preparing: SELECT test.id , test.test FROM test LIMIT ?, ? 
+2019-07-12 11:40:26.330 [http-nio-9020-exec-2] DEBUG com.sieyuan.apple.dao.TestDao.findAllList - ==> Parameters: 2(Integer), 2(Integer)
+2019-07-12 11:40:26.331 [http-nio-9020-exec-2] DEBUG com.sieyuan.apple.dao.TestDao.findAllList - <==      Total: 2
+2019-07-12 11:40:47.308 [http-nio-9020-exec-3] DEBUG com.sieyuan.apple.dao.TestDao.findAllList_COUNT - ==>  Preparing: SELECT count(0) FROM test 
+2019-07-12 11:40:47.309 [http-nio-9020-exec-3] DEBUG com.sieyuan.apple.dao.TestDao.findAllList_COUNT - ==> Parameters: 
+2019-07-12 11:40:47.311 [http-nio-9020-exec-3] DEBUG com.sieyuan.apple.dao.TestDao.findAllList_COUNT - <==      Total: 1
+2019-07-12 11:40:47.312 [http-nio-9020-exec-3] DEBUG com.sieyuan.apple.dao.TestDao.findAllList - ==>  Preparing: SELECT test.id , test.test FROM test LIMIT ?, ? 
+2019-07-12 11:40:47.313 [http-nio-9020-exec-3] DEBUG com.sieyuan.apple.dao.TestDao.findAllList - ==> Parameters: 2(Integer), 2(Integer)
+2019-07-12 11:40:47.315 [http-nio-9020-exec-3] DEBUG com.sieyuan.apple.dao.TestDao.findAllList - <==      Total: 2
+2019-07-12 11:42:11.411 [http-nio-9020-exec-1] DEBUG com.sieyuan.apple.dao.TestDao.findAllList_COUNT - ==>  Preparing: SELECT count(0) FROM test 
+2019-07-12 11:42:11.429 [http-nio-9020-exec-1] DEBUG com.sieyuan.apple.dao.TestDao.findAllList_COUNT - ==> Parameters: 
+2019-07-12 11:42:11.447 [http-nio-9020-exec-1] DEBUG com.sieyuan.apple.dao.TestDao.findAllList_COUNT - <==      Total: 1
+2019-07-12 11:42:11.450 [http-nio-9020-exec-1] DEBUG com.sieyuan.apple.dao.TestDao.findAllList - ==>  Preparing: SELECT test.id , test.test FROM test LIMIT ?, ? 
+2019-07-12 11:42:11.450 [http-nio-9020-exec-1] DEBUG com.sieyuan.apple.dao.TestDao.findAllList - ==> Parameters: 2(Integer), 2(Integer)
+2019-07-12 11:42:11.451 [http-nio-9020-exec-1] DEBUG com.sieyuan.apple.dao.TestDao.findAllList - <==      Total: 2
+2019-07-12 11:43:37.155 [http-nio-9020-exec-3] DEBUG com.sieyuan.apple.dao.TestDao.findAllList_COUNT - ==>  Preparing: SELECT count(0) FROM test 
+2019-07-12 11:43:37.176 [http-nio-9020-exec-3] DEBUG com.sieyuan.apple.dao.TestDao.findAllList_COUNT - ==> Parameters: 
+2019-07-12 11:43:37.197 [http-nio-9020-exec-3] DEBUG com.sieyuan.apple.dao.TestDao.findAllList_COUNT - <==      Total: 1
+2019-07-12 11:43:37.200 [http-nio-9020-exec-3] DEBUG com.sieyuan.apple.dao.TestDao.findAllList - ==>  Preparing: SELECT test.id , test.test FROM test LIMIT ?, ? 
+2019-07-12 11:43:37.200 [http-nio-9020-exec-3] DEBUG com.sieyuan.apple.dao.TestDao.findAllList - ==> Parameters: 2(Integer), 2(Integer)
+2019-07-12 11:43:37.201 [http-nio-9020-exec-3] DEBUG com.sieyuan.apple.dao.TestDao.findAllList - <==      Total: 2
+2019-07-12 16:22:44.955 [http-nio-9020-exec-1] DEBUG com.sieyuan.apple.dao.TestDao.findAllList - ==>  Preparing: SELECT test.id , test.test FROM test 
+2019-07-12 16:22:44.973 [http-nio-9020-exec-1] DEBUG com.sieyuan.apple.dao.TestDao.findAllList - ==> Parameters: 
+2019-07-12 16:25:33.891 [http-nio-9020-exec-2] DEBUG com.sieyuan.apple.dao.TestDao.findAllList - ==>  Preparing: SELECT test.id , test.test FROM test 
+2019-07-12 16:25:33.911 [http-nio-9020-exec-2] DEBUG com.sieyuan.apple.dao.TestDao.findAllList - ==> Parameters: 
+2019-07-12 16:25:33.929 [http-nio-9020-exec-2] DEBUG com.sieyuan.apple.dao.TestDao.findAllList - <==      Total: 5
+2019-07-12 16:31:12.482 [http-nio-9020-exec-2] DEBUG com.sieyuan.apple.dao.TestDao.findAllList - ==>  Preparing: SELECT test.id , test.test FROM test 
+2019-07-12 16:31:12.502 [http-nio-9020-exec-2] DEBUG com.sieyuan.apple.dao.TestDao.findAllList - ==> Parameters: 
+2019-07-12 16:42:34.901 [http-nio-9020-exec-1] DEBUG com.sieyuan.apple.dao.TestDao.findAllList - ==>  Preparing: SELECT test.id , test.test FROM test 
+2019-07-12 16:44:56.074 [http-nio-9020-exec-1] DEBUG com.sieyuan.apple.dao.TestDao.getPage - ==>  Preparing: select count(*)from test 
+2019-07-12 16:44:56.095 [http-nio-9020-exec-1] DEBUG com.sieyuan.apple.dao.TestDao.getPage - ==> Parameters: 
+2019-07-12 16:44:56.111 [http-nio-9020-exec-1] DEBUG com.sieyuan.apple.dao.TestDao.getPage - ==>  Preparing: select * from test 
+2019-07-12 16:44:56.112 [http-nio-9020-exec-1] DEBUG com.sieyuan.apple.dao.TestDao.getPage - ==> Parameters: 
+2019-07-12 16:48:12.215 [http-nio-9020-exec-4] DEBUG com.sieyuan.apple.dao.TestDao.getPage - ==>  Preparing: select count(*)from test 
+2019-07-12 16:48:12.216 [http-nio-9020-exec-4] DEBUG com.sieyuan.apple.dao.TestDao.getPage - ==> Parameters: 
+2019-07-12 16:48:12.218 [http-nio-9020-exec-4] DEBUG com.sieyuan.apple.dao.TestDao.getPage - ==>  Preparing: select * from test 
+2019-07-12 16:48:12.218 [http-nio-9020-exec-4] DEBUG com.sieyuan.apple.dao.TestDao.getPage - ==> Parameters: 
+2019-07-12 16:51:15.058 [http-nio-9020-exec-6] DEBUG com.sieyuan.apple.dao.TestDao.getPage - ==>  Preparing: select count(*)from test 
+2019-07-12 16:51:15.060 [http-nio-9020-exec-6] DEBUG com.sieyuan.apple.dao.TestDao.getPage - ==> Parameters: 
+2019-07-12 16:51:34.494 [http-nio-9020-exec-6] DEBUG com.sieyuan.apple.dao.TestDao.getPage - ==>  Preparing: select * from test 
+2019-07-12 16:51:40.778 [http-nio-9020-exec-6] DEBUG com.sieyuan.apple.dao.TestDao.getPage - ==> Parameters: 
+2019-07-12 17:02:43.775 [http-nio-9020-exec-8] DEBUG com.sieyuan.apple.dao.TestDao.getPage - ==>  Preparing: select count(*)from test 
+2019-07-12 17:02:43.776 [http-nio-9020-exec-8] DEBUG com.sieyuan.apple.dao.TestDao.getPage - ==> Parameters: 
+2019-07-12 17:02:43.779 [http-nio-9020-exec-8] DEBUG com.sieyuan.apple.dao.TestDao.getPage - ==>  Preparing: select * from test 
+2019-07-12 17:02:43.779 [http-nio-9020-exec-8] DEBUG com.sieyuan.apple.dao.TestDao.getPage - ==> Parameters: 
+2019-07-12 17:25:57.615 [http-nio-9020-exec-2] DEBUG com.sieyuan.apple.dao.TestDao.getPage - ==>  Preparing: select count(*)from test 
+2019-07-12 17:27:36.381 [http-nio-9020-exec-1] DEBUG com.sieyuan.apple.dao.TestDao.getPage - ==>  Preparing: select count(*)from test 
+2019-07-12 17:27:36.610 [http-nio-9020-exec-1] DEBUG com.sieyuan.apple.dao.TestDao.getPage - ==> Parameters: 
+2019-07-12 17:27:43.471 [http-nio-9020-exec-1] DEBUG com.sieyuan.apple.dao.TestDao.getPage - ==>  Preparing: select * from test 
+2019-07-12 17:27:57.042 [http-nio-9020-exec-1] DEBUG com.sieyuan.apple.dao.TestDao.getPage - ==> Parameters: 

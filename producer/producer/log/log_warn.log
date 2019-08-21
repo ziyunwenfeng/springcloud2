@@ -1,71 +1,7 @@
-2019-07-10 08:48:56.671 [lettuce-nioEventLoop-4-2] WARN  io.lettuce.core.protocol.ConnectionWatchdog - Cannot reconnect: io.netty.channel.AbstractChannel$AnnotatedNoRouteToHostException: No route to host: no further information: /106.14.188.199:6379
-io.netty.channel.AbstractChannel$AnnotatedNoRouteToHostException: No route to host: no further information: /106.14.188.199:6379
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
-	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
-	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:670)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:617)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:534)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:906)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.NoRouteToHostException: No route to host: no further information
-	... 12 common frames omitted
-2019-07-10 08:49:09.746 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9h24m26s989ms918µs166ns).
-2019-07-10 08:57:20.421 [restartedMain] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/producer/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
-2019-07-10 08:57:21.743 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2019-07-10 08:57:21.757 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
-2019-07-10 08:57:23.209 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-07-10 08:57:25.773 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-07-10 08:57:30.570 [RMI TCP Connection(4)-127.0.0.1] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/producer/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
-2019-07-10 08:59:00.442 [http-nio-9005-exec-7] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
-2019-07-10 08:59:06.653 [http-nio-9005-exec-8] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required int parameter 'id' is not present]
-2019-07-10 09:04:03.393 [restartedMain] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/producer/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
-2019-07-10 09:04:04.503 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2019-07-10 09:04:04.514 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
-2019-07-10 09:04:06.414 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-07-10 09:04:08.681 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-07-10 09:04:13.174 [RMI TCP Connection(6)-127.0.0.1] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/producer/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
-2019-07-10 09:15:55.998 [restartedMain] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/producer/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
-2019-07-10 09:15:57.090 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2019-07-10 09:15:57.101 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
-2019-07-10 09:15:58.337 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-07-10 09:16:00.355 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-07-10 09:16:04.621 [RMI TCP Connection(4)-127.0.0.1] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/producer/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
-2019-07-10 12:41:48.294 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h25m14s614ms503µs233ns).
-2019-07-10 13:49:48.144 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=29m29s750ms899µs839ns).
-2019-07-10 13:51:13.786 [restartedMain] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/producer/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
-2019-07-10 13:51:14.791 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2019-07-10 13:51:14.802 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
-2019-07-10 13:51:16.049 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-07-10 13:51:18.067 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-07-10 13:51:21.822 [RMI TCP Connection(2)-127.0.0.1] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/producer/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
-2019-07-10 13:52:46.349 [restartedMain] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/producer/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
-2019-07-10 13:52:47.347 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2019-07-10 13:52:47.358 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
-2019-07-10 13:52:48.602 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-07-10 13:52:50.662 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-07-10 13:52:54.452 [RMI TCP Connection(4)-127.0.0.1] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/producer/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
-2019-07-10 15:08:47.280 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h5m53s749ms717µs689ns).
-2019-07-10 16:49:01.785 [restartedMain] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/producer/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
-2019-07-10 16:49:02.862 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2019-07-10 16:49:02.878 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
-2019-07-10 16:49:04.533 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-07-10 16:49:06.564 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-07-10 16:49:10.406 [RMI TCP Connection(4)-127.0.0.1] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/producer/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
-2019-07-10 18:39:19.830 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m39s99ms281µs779ns).
-2019-07-10 19:26:29.402 [restartedMain] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/producer/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
-2019-07-10 19:26:30.543 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2019-07-10 19:26:30.543 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
-2019-07-10 19:26:32.362 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-07-10 19:26:34.435 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-07-10 19:26:38.367 [RMI TCP Connection(2)-127.0.0.1] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/producer/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
-2019-07-10 19:44:00.052 [restartedMain] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/producer/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
-2019-07-10 19:44:01.051 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2019-07-10 19:44:01.067 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
-2019-07-10 19:44:02.291 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-07-10 19:44:04.353 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-2019-07-10 19:44:08.259 [RMI TCP Connection(2)-127.0.0.1] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/producer/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2019-07-28 22:32:43.077 [restartedMain] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/producer/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2019-07-28 22:32:44.265 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-07-28 22:32:44.280 [restartedMain] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2019-07-28 22:32:45.641 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-07-28 22:32:48.835 [restartedMain] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-07-28 22:32:50.014 [restartedMain] WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2019-07-28 22:32:54.437 [RMI TCP Connection(4)-127.0.0.1] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/producer/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect

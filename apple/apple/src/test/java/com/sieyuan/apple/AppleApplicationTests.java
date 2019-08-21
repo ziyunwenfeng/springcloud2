@@ -8,6 +8,9 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class AppleApplicationTests {
@@ -42,5 +45,25 @@ public class AppleApplicationTests {
 //        System.out.println(redisUtil.lGet("a",0,1));
 //        System.out.println(redisUtil.hmget("b"));
     }
+
+    @Test
+    public void test() {
+//        StringBuilder sb = new StringBuilder();
+//        SimpleDateFormat format = new SimpleDateFormat("yyyyMMdd");
+//        String currentTime = format.format(new Date());
+//        sb
+//                .append("48")
+//                .append(currentTime)
+//                .append(String.valueOf(System.currentTimeMillis()).substring(0,11))
+//                .append(String.valueOf((int)(Math.random()*999)));
+//        System.out.println(sb.toString());
+        StringBuilder walletId = new StringBuilder();
+        //固定开头49
+        walletId.append("49")
+                .append("482019081015654516776741".substring(10))
+                .append(String.valueOf((int)(Math.random()*999999)));
+        System.out.println(walletId.toString());
+    }
+
 
 }

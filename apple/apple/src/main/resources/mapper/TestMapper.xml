@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sieyuan.apple.dao.TestDao">
+
+    <resultMap id="testResultMap" type="com.sieyuan.apple.entity.Test">
+        <id column="id" property="id"/> 
+        <result column="test" property="test"/> 
+
+        
+        
+    </resultMap>
+
+    <sql id="testColumns">
+        test.id ,
+        test.test
+    </sql>
+
+    <sql id="testJoins">
+        
+    </sql>
+
+    <select id="get" resultMap="testResultMap">
+        SELECT
+        <include refid="testColumns" />
+        FROM test <include refid="testJoins" />
+        <where>
+        test.id = #{id}
+        </where>
+    </select>
+
+    <select id="findList" resultMap="testResultMap">
+        SELECT
+        <include refid="testColumns" />
+        FROM test <include refid="testJoins" />
+        <where>
+        </where>
+    </select>
+
+    <select id="findAllList" resultMap="testResultMap">
+        SELECT
+        <include refid="testColumns" />
+        FROM test <include refid="testJoins" />
+        <where>
+        </where>
+    </select>
+
+    <insert id="insert">
+        INSERT INTO test(
+            id,
+            test
+        )
+        VALUES (
+            #{id},
+            #{test}
+        )
+    </insert>
+
+    <insert id="insertBatch">
+        INSERT INTO test(
+            id,
+            test
+        )
+        VALUES
+        <foreach collection ="list" item="test" separator =",">
+        (
+            #{test.id},
+            #{test.test}
+        )
+        </foreach>
+    </insert>
+
+    <update id="update">
+        UPDATE test SET
+        id = #{id},
+        test = #{test}
+        WHERE id = #{id}
+    </update>
+
+    <update id="delete">
+        DELETE FROM test
+        WHERE id = #{id}
+    </update>
+
+    <update id="deleteById">
+        DELETE FROM test
+        WHERE id = #{id}
+    </update>
+
+    <select id="getPage" resultMap="testResultMap" parameterType="com.sieyuan.apple.entity.Page">
+        select * from test
+    </select>
+
+</mapper>

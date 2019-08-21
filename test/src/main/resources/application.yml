@@ -43,8 +43,7 @@ pagehelper :
   helperDialect: mysql
   reasonable: true
   supportMethodsArguments: true
-  params:
-    count: countSql
+  params: count=countSql
 #代码生成器配置
 #生成代码的项目根路径
 auto-code:
