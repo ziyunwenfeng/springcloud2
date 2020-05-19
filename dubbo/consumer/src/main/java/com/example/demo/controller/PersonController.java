@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  **/
 @RestController
 public class PersonController {
-    @Reference
+    @Reference(check = false, mock = "true", timeout = 3000, version = "1.0.2")
     IPersonInterface person;
     @GetMapping("/get")
     public Person get(){
