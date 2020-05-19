@@ -8,7 +8,7 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 
 @SpringBootApplication
 @EnableDiscoveryClient
-//@EnableResourceServer
+@EnableResourceServer
 public class AuthApplication {
 
 	public static void main(String[] args) {

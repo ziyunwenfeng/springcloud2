@@ -11,6 +11,6 @@
       select * from user where username =#{username,jdbcType=VARCHAR}
     </select>
     <insert id="register">
-        insert into user(username,password) values (#{param1,jdbcType=VARCHAR} ,#{param2,jdbcType=VARCHAR}  )
+        insert into t_user(username,password) values (#{param1,jdbcType=VARCHAR} ,#{param2,jdbcType=VARCHAR}  )
     </insert>
 </mapper>

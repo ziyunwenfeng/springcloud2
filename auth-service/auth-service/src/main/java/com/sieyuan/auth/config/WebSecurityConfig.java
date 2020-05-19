@@ -1,5 +1,6 @@
 package com.sieyuan.auth.config;
 
+import com.sieyuan.auth.Utils.MyPasswordEncoder;
 import com.sieyuan.auth.service.UserServiceDetail;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -20,10 +21,10 @@ import javax.servlet.http.HttpServletResponse;
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     UserServiceDetail userServiceDetail;
-//    @Bean
-//    public BCryptPasswordEncoder passwordEncoder() {
-//        return new BCryptPasswordEncoder();
-//    }
+    @Bean
+    public BCryptPasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
     @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception{
         httpSecurity
@@ -42,13 +43,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception{
 //        auth.userDetailsService(userServiceDetail).passwordEncoder(passwordEncoder());
-        auth.userDetailsService(userServiceDetail).passwordEncoder(new BCryptPasswordEncoder());
-//        auth
-//                .inMemoryAuthentication()
-//                .passwordEncoder(new MyPasswordEncoder())
-//                .withUser("app")
-//                .password("1234")
-//                .roles("ROLE_ADMIN");
+//        auth.userDetailsService(userServiceDetail).passwordEncoder(new BCryptPasswordEncoder());
+        auth
+                .inMemoryAuthentication()
+                .passwordEncoder(new MyPasswordEncoder())
+                .withUser("app")
+                .password("1234")
+                .roles("ROLE_ADMIN");
 
     }
     @Override

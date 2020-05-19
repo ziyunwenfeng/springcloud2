@@ -10,10 +10,10 @@ import org.apache.dubbo.config.annotation.Service;
  * @author: wenfeng
  * @create: 2019-07-11 10:12
  **/
-@Service(version = "1.0.1")
-public class PersonServiceImp implements IPersonInterface {
+@Service(version = "1.0.2")
+public class PersonServiceImp2 implements IPersonInterface {
     @Override
     public Person getPerson() {
-        return new Person(1,"web1");
+        return new Person(2,"web2");
     }
 }
