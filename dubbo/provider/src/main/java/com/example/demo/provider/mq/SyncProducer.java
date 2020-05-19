@@ -1,4 +1,4 @@
-package com.example.demo.mq;
+package com.example.demo.provider.mq;
 
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
 import org.apache.rocketmq.client.producer.SendResult;
@@ -16,6 +16,6 @@ public class SyncProducer {
             SendResult result = producer.send(message,10000);
             System.out.println(result);
         }
-//        producer.shutdown();
+        producer.shutdown();
     }
 }
