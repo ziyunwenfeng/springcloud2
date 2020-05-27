@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.CustomerMapper">
+    <resultMap id="customerMap" type="com.example.demo.entity.Customer">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="password" property="password"/>
+        <result column="avatar" property="avatar"></result>
+        <result column="province" property="province"/>
+        <result column="city" property="city"/>
+        <result column="area" property="area"/>
+        <result column="address" property="address"/>
+        <result column="phone" property="phone"/>
+        <result column="mail" property="mail"/>
+        <result column="is_delete" property="isDelete"/>
+    </resultMap>
+
+    <select id="getDetailById" resultMap="customerMap" parameterType="java.lang.String">
+        select * from t_customer where id = #{id,jdbcType=VARCHAR}
+    </select>
+</mapper>
