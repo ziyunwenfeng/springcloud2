@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.common.annotation.Deleted;
 import com.example.demo.entity.Customer;
 import com.example.demo.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,7 @@ public class MemberController {
     @Autowired
     private CustomerService customerService;
     @RequestMapping(value = {"/getById/{id}"}, method = RequestMethod.GET)
+    @Deleted(deleted = "N")
     public Customer getById(@PathVariable("id") String id) {
         return customerService.getDetailById(id);
     }

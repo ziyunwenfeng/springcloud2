@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 public class InterceptorTest implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        log.info("hihi");
+        log.info("preHandle");
         return true;
     }
 

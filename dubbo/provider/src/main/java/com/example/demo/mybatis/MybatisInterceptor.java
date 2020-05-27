@@ -1,5 +1,6 @@
 package com.example.demo.mybatis;
 
+import com.example.common.util.ThreadLocalUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.executor.Executor;
 import org.apache.ibatis.mapping.BoundSql;
@@ -37,7 +38,7 @@ import java.util.Properties;
 public class MybatisInterceptor implements Interceptor {
     @Override
     public Object intercept(Invocation invocation) throws Throwable {
-        log.info("--------------------");
+        log.info("go into intercept");
         MappedStatement statement = (MappedStatement)invocation.getArgs()[0];
         Object parameter =null;
         if (invocation.getArgs().length > 1) {
@@ -49,19 +50,20 @@ public class MybatisInterceptor implements Interceptor {
         Object result =  invocation.proceed();
         String sql = getSql(configuration,boundSql,sqlId);
 //        String sql = boundSql.getSql();
-        log.info(sql);
+        log.info("sql: "+sql);
+        String deleted = ThreadLocalUtil.getThreadLocal();
+        log.info("deleted: "+deleted);
+
         return result;
     }
 
     @Override
     public Object plugin(Object target) {
-        log.info("77777777777777777");
         return Plugin.wrap(target,this);
     }
 
     @Override
     public void setProperties(Properties properties) {
-        log.info("////////////////");
     }
 
     public static String getSql(Configuration configuration,BoundSql boundSql,String sqlId) {
